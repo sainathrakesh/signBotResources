@@ -1,0 +1,3 @@
+Instantiated with filepath=None->None, scale=[0.009999999776482582, 0.009999999776482582, 0.009999998845160007], mesh=<bpy_struct, Mesh("visual_left_upper_arm") at 0x00000252FEB33908>, meshname=visual_left_upper_arm, material=None, mesh_orientation=None, {}
+->trying export of <bpy_struct, Mesh("visual_left_upper_arm") at 0x00000252FEB33908> to C:\Users\TobiasJacob\git\hum-rbdl-controller\humanoid2\meshes\stl\visual_left_upper_arm.stl
+->wrote stl to C:\Users\TobiasJacob\git\hum-rbdl-controller\humanoid2\meshes\stl\visual_left_upper_arm.stl from bpy_types.Mesh

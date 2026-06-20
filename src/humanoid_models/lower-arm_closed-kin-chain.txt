@@ -1,0 +1,10 @@
+subs = {
+    alpha: 0, beta: 0,  # Angles
+    px: 0.01996099, py: 0, pz: -0.27785794,  # Position vector p
+    d1x: 0.01368583, d1y: 0.01256957, d1z:-0.12204298, # d1 vector lin actuator
+    d2x: 0.01368583, d2y: -0.01256957, d2z:-0.12204298, # d1 vector lin actuator
+    a1x: -0.0175, a1y: -0.025, a1z: -0.1579,  # a1 coordinates
+    a2x: -0.0175, a2y: 0.025, a2z: -0.1579,  # a2 coordinates
+    b1x: -0.02386642, b1y: -0.01243043, b1z: 0,  # b1 coordinates
+    b2x: -0.02386642, b2y: 0.01243043, b2z: 0   # b2 coordinates
+}

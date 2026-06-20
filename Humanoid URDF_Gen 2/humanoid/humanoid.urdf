@@ -1,0 +1,625 @@
+<robot name="humanoid2" version="1.0">
+  <joint name="left_ankle_x" type="continuous">
+    <limit lower="-0.40000" upper="0.40000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.19221 0.00000" xyz="-0.00408 0.00000 -0.02060"/>
+    <parent link="link_left_ankle_y"/>
+    <child link="link_left_foot_ft_sensor"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="left_ankle_y" type="continuous">
+    <limit lower="-0.30000" upper="0.40000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.08503 0.00000 -0.42235"/>
+    <parent link="link_left_shin"/>
+    <child link="link_left_ankle_y"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="left_elbow" type="continuous">
+    <limit lower="-1.60000" upper="0.50000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 -0.00000" xyz="0.00081 -0.00261 -0.08385"/>
+    <parent link="link_left_upper_arm"/>
+    <child link="link_left_lower_arm"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="left_foot_ft_sensor" type="fixed">
+    <origin rpy="0.00000 -0.19221 -0.00000" xyz="0.05206 -0.00000 -0.05450"/>
+    <parent link="link_left_foot_ft_sensor"/>
+    <child link="link_left_foot"/>
+  </joint>
+  <joint name="left_hip_x" type="continuous">
+    <limit lower="-1.57" upper="1.57" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.26180 0.00000 0.00000" xyz="0.00000 0.00000 -0.06800"/>
+    <parent link="link_left_hip_z"/>
+    <child link="link_left_hip_x"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="left_hip_y" type="continuous">
+    <limit lower="-0.50000" upper="0.20000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.05500 0.00000 -0.06850"/>
+    <parent link="link_left_hip_x"/>
+    <child link="link_left_thigh"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="left_hip_z" type="continuous">
+    <limit lower="-0.10000" upper="0.50000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.26180 0.00000 0.00000" xyz="0.00000 0.10100 -0.03000"/>
+    <parent link="link_pelvis"/>
+    <child link="link_left_hip_z"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="left_knee" type="continuous">
+    <limit lower="0.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.11162 0.00000 -0.32483"/>
+    <parent link="link_left_thigh"/>
+    <child link="link_left_shin"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="left_shoulder_x" type="continuous">
+    <limit lower="-0.10000" upper="2.6" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.34907 0.00000 0.00000" xyz="0.01584 0.06906 0.00678"/>
+    <parent link="link_left_shoulder_y"/>
+    <child link="link_left_shoulder_x"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="left_shoulder_y" type="continuous">
+    <limit lower="-1.60000" upper="0.80000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.34907 0.00000 -0.17453" xyz="0.05962 0.16600 0.30703"/>
+    <parent link="link_torso_y"/>
+    <child link="link_left_shoulder_y"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="left_shoulder_z" type="continuous">
+    <limit lower="-3.14" upper="3.14" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00014 0.00078 -0.18880"/>
+    <parent link="link_left_shoulder_x"/>
+    <child link="link_left_upper_arm"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="left_wrist_x" type="continuous">
+    <limit lower="-0.30000" upper="0.00000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 -0.00000 -0.00000" xyz="-0.00350 0.01268 -0.11628"/>
+    <parent link="link_left_wrist_z"/>
+    <child link="link_left_wrist_x"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="left_wrist_y" type="continuous">
+    <limit lower="-0.10000" upper="0.10000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 -0.00000 -0.00000" xyz="-0.00287 0.00057 -0.01012"/>
+    <parent link="link_left_wrist_x"/>
+    <child link="link_left_hand"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="left_wrist_z" type="continuous">
+    <limit lower="-0.50000" upper="0.50000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 -0.00000 -0.00000" xyz="0.00613 0.00123 -0.11629"/>
+    <parent link="link_left_lower_arm"/>
+    <child link="link_left_wrist_z"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="right_ankle_x" type="continuous">
+    <limit lower="-0.40000" upper="0.40000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.19221 0.00000" xyz="-0.00408 0.00000 -0.02060"/>
+    <parent link="link_right_ankle_y"/>
+    <child link="link_right_foot_ft_sensor"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="right_ankle_y" type="continuous">
+    <limit lower="-0.30000" upper="0.40000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.08503 0.00000 -0.42235"/>
+    <parent link="link_right_shin"/>
+    <child link="link_right_ankle_y"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="right_elbow" type="continuous">
+    <limit lower="-1.60000" upper="0.50000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 0.00000" xyz="0.00081 0.00261 -0.08385"/>
+    <parent link="link_right_upper_arm"/>
+    <child link="link_right_lower_arm"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="right_foot_ft_sensor" type="fixed">
+    <origin rpy="0.00000 -0.19221 -0.00000" xyz="0.05206 0.00000 -0.05450"/>
+    <parent link="link_right_foot_ft_sensor"/>
+    <child link="link_right_foot"/>
+  </joint>
+  <joint name="right_hip_x" type="continuous">
+    <limit lower="-0.50000" upper="0.05000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.26180 0.00000 0.00000" xyz="0.00000 -0.00000 -0.06800"/>
+    <parent link="link_right_hip_z"/>
+    <child link="link_right_hip_x"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="right_hip_y" type="continuous">
+    <limit lower="-0.50000" upper="0.20000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.05500 -0.00000 -0.06850"/>
+    <parent link="link_right_hip_x"/>
+    <child link="link_right_thigh"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="right_hip_z" type="continuous">
+    <limit lower="-0.50000" upper="0.10000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.26180 0.00000 0.00000" xyz="0.00000 -0.10100 -0.03000"/>
+    <parent link="link_pelvis"/>
+    <child link="link_right_hip_z"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="right_knee" type="continuous">
+    <limit lower="0.00000" upper="1.00000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.11162 0.00000 -0.32483"/>
+    <parent link="link_right_thigh"/>
+    <child link="link_right_shin"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="right_shoulder_x" type="continuous">
+    <limit lower="-2.6" upper="0.10000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.34907 0.00000 -0.00000" xyz="0.01584 -0.06906 0.00678"/>
+    <parent link="link_right_shoulder_y"/>
+    <child link="link_right_shoulder_x"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="right_shoulder_y" type="continuous">
+    <limit lower="-1.60000" upper="0.80000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.34907 0.00000 0.17453" xyz="0.05962 -0.16600 0.30703"/>
+    <parent link="link_torso_y"/>
+    <child link="link_right_shoulder_y"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="right_shoulder_z" type="continuous">
+    <limit lower="-3.14" upper="3.14" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 0.00000" xyz="-0.00014 -0.00078 -0.18880"/>
+    <parent link="link_right_shoulder_x"/>
+    <child link="link_right_upper_arm"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="right_wrist_x" type="continuous">
+    <limit lower="0.00000" upper="0.30000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 -0.00000 0.00000" xyz="-0.00350 -0.01268 -0.11628"/>
+    <parent link="link_right_wrist_z"/>
+    <child link="link_right_wrist_x"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="right_wrist_y" type="continuous">
+    <limit lower="-0.10000" upper="0.10000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 -0.00000 0.00000" xyz="-0.00287 -0.00057 -0.01012"/>
+    <parent link="link_right_wrist_x"/>
+    <child link="link_right_hand"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="right_wrist_z" type="continuous">
+    <limit lower="-0.50000" upper="0.50000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 -0.00000 0.00000" xyz="0.00613 -0.00123 -0.11629"/>
+    <parent link="link_right_lower_arm"/>
+    <child link="link_right_wrist_z"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="torso_x" type="continuous">
+    <limit lower="-0.15000" upper="0.15000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.10528"/>
+    <parent link="link_torso_z"/>
+    <child link="link_torso_x"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="torso_y" type="continuous">
+    <limit lower="-0.20000" upper="0.20000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="-0.08635 0.00000 -0.00098"/>
+    <parent link="link_torso_x"/>
+    <child link="link_torso_y"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="torso_z" type="continuous">
+    <limit lower="-0.50000" upper="0.50000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+    <parent link="link_pelvis"/>
+    <child link="link_torso_z"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <link name="link_left_ankle_y">
+    <inertial>
+      <inertia ixx="0.00001" ixy="-0.00000" ixz="0.00000" iyy="0.00001" iyz="-0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00227 0.00000 -0.01284"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_left_ankle_y">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="-0.02841 -0.11860 0.91136"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_ankle_y.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_foot">
+    <collision name="link_left_foot_collision">
+      <origin rpy="-0.00000 -0.00000 0.00000" xyz="0.00856 -0.00000 0.00996"/>
+      <geometry>
+        <box size="0.30000 0.10000 0.02000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00087" ixy="0.00000" ixz="-0.00000" iyy="0.00753" iyz="-0.00000" izz="0.00833"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00119 -0.00000 0.02065"/>
+      <mass value="1.00000"/>
+    </inertial>
+  </link>
+  <link name="link_left_foot_ft_sensor">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="-0.00000" iyy="0.00001" iyz="-0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00363 0.00000 -0.03585"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_left_foot">
+      <origin rpy="1.37859 -0.00000 1.57080" xyz="-0.20191 -0.11860 0.91015"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_foot.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_hand">
+    <inertial>
+      <inertia ixx="0.00191" ixy="0.00000" ixz="0.00000" iyy="0.00228" iyz="0.00000" izz="0.00044"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.01840 -0.11829"/>
+      <mass value="1.00000"/>
+    </inertial>
+    <visual name="visual_left_hand">
+      <origin rpy="1.57080 0.00000 1.74533" xyz="0.03886 -0.23871 0.12126"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_hand.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_hip_x">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00000" iyy="0.00001" iyz="0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_left_hip_x">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="0.00000 -0.11860 0.09568"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_hip_x.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_hip_z">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00000" iyy="0.00001" iyz="0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_left_hip_z">
+      <origin rpy="1.57080 0.26180 1.57080" xyz="0.00000 -0.08979 0.05512"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_hip_z.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_lower_arm">
+    <inertial>
+      <inertia ixx="0.00250" ixy="0.00000" ixz="0.00000" iyy="0.00292" iyz="0.00000" izz="0.00292"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00034 -0.00006 -0.08079"/>
+      <mass value="2.00000"/>
+    </inertial>
+    <visual name="visual_left_lower_arm">
+      <origin rpy="1.57080 0.00000 1.74533" xyz="0.03863 -0.22422 -0.12143"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_lower_arm.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_shin">
+    <inertial>
+      <inertia ixx="0.00375" ixy="0.00000" ixz="0.00000" iyy="0.04188" iyz="0.00000" izz="0.04188"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.05682 -0.00000 -0.16645"/>
+      <mass value="3.00000"/>
+    </inertial>
+    <visual name="visual_left_shin">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="0.05662 -0.11860 0.48901"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_shin.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_shoulder_x">
+    <inertial>
+      <inertia ixx="0.00001" ixy="-0.00000" ixz="0.00000" iyy="0.00001" iyz="-0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00045 -0.00256 -0.09852"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_left_shoulder_x">
+      <origin rpy="1.57080 0.00000 1.74533" xyz="0.03930 -0.22605 -0.39408"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_shoulder_x.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_shoulder_y">
+    <inertial>
+      <inertia ixx="0.00001" ixy="-0.00000" ixz="-0.00000" iyy="0.00001" iyz="0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.01702 0.06996 0.00103"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_left_shoulder_y">
+      <origin rpy="1.50768 -0.34354 1.75628" xyz="0.05515 -0.00858 -0.44085"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_shoulder_y.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_thigh">
+    <inertial>
+      <inertia ixx="0.01440" ixy="0.00000" ixz="0.00000" iyy="0.11387" iyz="0.00000" izz="0.11387"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.05411 -0.00000 -0.12785"/>
+      <mass value="8.00000"/>
+    </inertial>
+    <visual name="visual_left_thigh">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="-0.05500 -0.11860 0.16418"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_thigh.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_upper_arm">
+    <inertial>
+      <inertia ixx="0.00900" ixy="0.00000" ixz="0.00000" iyy="0.02117" iyz="-0.00000" izz="0.02117"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.05292"/>
+      <mass value="5.00000"/>
+    </inertial>
+    <visual name="visual_left_upper_arm">
+      <origin rpy="1.57080 0.00000 1.74533" xyz="0.03944 -0.22683 -0.20528"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_upper_arm.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_left_wrist_x">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00000" iyy="0.00001" iyz="0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.00000"/>
+      <mass value="0.00001"/>
+    </inertial>
+  </link>
+  <link name="link_left_wrist_z">
+    <inertial>
+      <inertia ixx="0.00250" ixy="0.00000" ixz="0.00000" iyy="0.00292" iyz="0.00000" izz="0.00292"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00650 -0.00115 -0.05000"/>
+      <mass value="2.00000"/>
+    </inertial>
+    <visual name="visual_left_wrist_z">
+      <origin rpy="1.57080 0.00000 1.74533" xyz="0.03250 -0.22545 -0.00514"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_left_wrist_z.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_pelvis">
+    <inertial>
+      <inertia ixx="0.00500" ixy="0.00000" ixz="0.00000" iyy="0.00500" iyz="0.00000" izz="0.00500"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <mass value="3.00000"/>
+    </inertial>
+    <visual name="visual_pelvis">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_pelvis.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_ankle_y">
+    <inertial>
+      <inertia ixx="0.00001" ixy="-0.00000" ixz="0.00000" iyy="0.00001" iyz="-0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00227 0.00000 -0.01284"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_right_ankle_y">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="-0.02841 0.11860 0.91136"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_ankle_y.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_foot">
+    <collision name="link_right_foot_collision">
+      <origin rpy="-0.00000 -0.00000 0.00000" xyz="0.00856 -0.00000 0.00996"/>
+      <geometry>
+        <box size="0.30000 0.10000 0.02000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="0.00087" ixy="0.00000" ixz="-0.00000" iyy="0.00753" iyz="0.00000" izz="0.00833"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00119 0.00000 0.02065"/>
+      <mass value="1.00000"/>
+    </inertial>
+  </link>
+  <link name="link_right_foot_ft_sensor">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00000" iyy="0.00001" iyz="-0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00363 0.00000 -0.03585"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_right_foot">
+      <origin rpy="1.37859 -0.00000 1.57080" xyz="-0.20191 0.11860 0.91015"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_foot.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_hand">
+    <inertial>
+      <inertia ixx="0.00191" ixy="-0.00000" ixz="0.00000" iyy="0.00228" iyz="-0.00000" izz="0.00044"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.01840 -0.11829"/>
+      <mass value="1.00000"/>
+    </inertial>
+    <visual name="visual_right_hand">
+      <origin rpy="1.57080 -0.00000 1.39626" xyz="0.03886 0.23871 0.12126"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_hand.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_hip_x">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00000" iyy="0.00001" iyz="0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_right_hip_x">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="0.00000 0.11860 0.09568"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_hip_x.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_hip_z">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00000" iyy="0.00001" iyz="0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_right_hip_z">
+      <origin rpy="1.57080 -0.26180 1.57080" xyz="0.00000 0.08979 0.05512"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_hip_z.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_lower_arm">
+    <inertial>
+      <inertia ixx="0.00250" ixy="-0.00000" ixz="0.00000" iyy="0.00500" iyz="-0.00000" izz="0.00500"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00034 0.00006 -0.08079"/>
+      <mass value="2.00000"/>
+    </inertial>
+    <visual name="visual_right_lower_arm">
+      <origin rpy="1.57080 -0.00000 1.39626" xyz="0.03863 0.22422 -0.12143"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_lower_arm.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_shin">
+    <inertial>
+      <inertia ixx="0.00375" ixy="0.00000" ixz="0.00000" iyy="0.04188" iyz="0.00000" izz="0.04188"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.05682 -0.00000 -0.16645"/>
+      <mass value="3.00000"/>
+    </inertial>
+    <visual name="visual_right_shin">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="0.05662 0.11860 0.48901"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_shin.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_shoulder_x">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00000" iyy="0.00001" iyz="0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00045 0.00256 -0.09852"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_right_shoulder_x">
+      <origin rpy="1.57080 -0.00000 1.39626" xyz="0.03930 0.22605 -0.39408"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_shoulder_x.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_shoulder_y">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="-0.00000" iyy="0.00001" iyz="-0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.01702 -0.06996 0.00103"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_right_shoulder_y">
+      <origin rpy="1.50768 0.34354 1.38531" xyz="0.05515 0.00858 -0.44085"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_shoulder_y.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_thigh">
+    <inertial>
+      <inertia ixx="0.01440" ixy="0.00000" ixz="0.00000" iyy="0.11387" iyz="0.00000" izz="0.11387"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.05411 -0.00000 -0.12785"/>
+      <mass value="8.00000"/>
+    </inertial>
+    <visual name="visual_right_thigh">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="-0.05500 0.11860 0.16418"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_thigh.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_upper_arm">
+    <inertial>
+      <inertia ixx="0.00900" ixy="-0.00000" ixz="0.00000" iyy="0.02117" iyz="0.00000" izz="0.02117"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.05292"/>
+      <mass value="5.00000"/>
+    </inertial>
+    <visual name="visual_right_upper_arm">
+      <origin rpy="1.57080 -0.00000 1.39626" xyz="0.03944 0.22683 -0.20528"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_upper_arm.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_wrist_x">
+    <inertial>
+      <inertia ixx="0.00001" ixy="-0.00000" ixz="0.00000" iyy="0.00001" iyz="-0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.00000"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_right_wrist_x">
+      <origin rpy="1.57080 -0.00000 1.39626" xyz="0.03599 0.23813 0.11114"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_wrist_x.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_right_wrist_z">
+    <inertial>
+      <inertia ixx="0.00250" ixy="-0.00000" ixz="0.00000" iyy="0.00500" iyz="-0.00000" izz="0.00500"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00650 0.00115 -0.05000"/>
+      <mass value="2.00000"/>
+    </inertial>
+    <visual name="visual_right_wrist_z">
+      <origin rpy="1.57080 -0.00000 1.39626" xyz="0.03250 0.22545 -0.00514"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_right_wrist_z.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_torso_x">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00000" iyy="0.00001" iyz="0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.03457 0.00000 0.00000"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_torso_x">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="0.00000 0.00000 -0.10528"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_torso_x.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_torso_y">
+    <inertial>
+      <inertia ixx="0.05333" ixy="0.00000" ixz="0.00000" iyy="0.03333" iyz="0.00000" izz="0.03333"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.07197 -0.00000 0.22498"/>
+      <mass value="8.00000"/>
+    </inertial>
+    <visual name="visual_torso_y">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="0.08635 0.00000 -0.10430"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_torso_y.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_torso_z">
+    <inertial>
+      <inertia ixx="0.00001" ixy="0.00000" ixz="0.00000" iyy="0.00001" iyz="0.00000" izz="0.00001"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.07652"/>
+      <mass value="0.00001"/>
+    </inertial>
+    <visual name="visual_torso_z">
+      <origin rpy="1.57080 -0.00000 1.57080" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="meshes/stl/visual_torso_z.stl" scale="0.01000 0.01000 0.01000"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

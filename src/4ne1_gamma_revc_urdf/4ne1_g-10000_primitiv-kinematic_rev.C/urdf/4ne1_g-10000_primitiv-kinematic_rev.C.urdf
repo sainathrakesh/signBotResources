@@ -1,0 +1,3287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="4ne1_g-10000_primitiv-kinematic_rev.C">
+  <link
+    name="link_pelvis">
+    <inertial>
+      <origin
+        xyz="0.0017796 5.7353E-10 0.011184"
+        rpy="0 0 0" />
+      <mass
+        value="0.99857" />
+      <inertia
+        ixx="0.0039119"
+        ixy="-4.0039E-09"
+        ixz="0.00011899"
+        iyy="0.0052183"
+        iyz="-9.9221E-11"
+        izz="0.0036827" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_pelvis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_pelvis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_left_hip_y">
+    <inertial>
+      <origin
+        xyz="-0.0030426 0.010199 -0.013267"
+        rpy="0 0 0" />
+      <mass
+        value="0.54741" />
+      <inertia
+        ixx="0.0015874"
+        ixy="1.5117E-05"
+        ixz="-0.00011189"
+        iyy="0.0026199"
+        iyz="7.0468E-05"
+        izz="0.0011599" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_hip_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_hip_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_y"
+    type="revolute">
+    <origin
+      xyz="0 0.1035 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="link_left_hip_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_hip_x">
+    <inertial>
+      <origin
+        xyz="0.0049575 0.027246 -0.15"
+        rpy="0 0 0" />
+      <mass
+        value="1.3866" />
+      <inertia
+        ixx="0.011841"
+        ixy="-5.2813E-06"
+        ixz="-3.1738E-05"
+        iyy="0.010844"
+        iyz="0.00010928"
+        izz="0.0025217" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_hip_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_hip_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_y" />
+    <child
+      link="link_left_hip_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.2"
+      upper="0.7"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_hip_z">
+    <inertial>
+      <origin
+        xyz="-8.5737E-08 -0.022381 -0.3813"
+        rpy="0 0 0" />
+      <mass
+        value="0.42178" />
+      <inertia
+        ixx="0.0015256"
+        ixy="-8.5394E-10"
+        ixz="1.1073E-09"
+        iyy="0.0017768"
+        iyz="-0.00026769"
+        izz="0.0009568" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_hip_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_hip_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_x" />
+    <child
+      link="link_left_hip_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shin">
+    <inertial>
+      <origin
+        xyz="0.0030339 0.010468 -0.18286"
+        rpy="0 0 0" />
+      <mass
+        value="1.1312" />
+      <inertia
+        ixx="0.021207"
+        ixy="2.1007E-05"
+        ixz="0.00061069"
+        iyy="0.021795"
+        iyz="-0.0012109"
+        izz="0.0014003" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_shin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_shin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_knee"
+    type="revolute">
+    <origin
+      xyz="0 3.1058E-05 -0.4275"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_z" />
+    <child
+      link="link_left_shin" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_ankle_y">
+    <inertial>
+      <origin
+        xyz="2.8581E-09 -4.0928E-09 -8.717E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.027847" />
+      <inertia
+        ixx="2.5806E-06"
+        ixy="-6.1344E-15"
+        ixz="9.5477E-14"
+        iyy="2.5806E-06"
+        iyz="-5.6829E-13"
+        izz="3.4954E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_ankle_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_ankle_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ankle_y"
+    type="revolute">
+    <origin
+      xyz="0 0.00425 -0.43"
+      rpy="0 0.12845 0" />
+    <parent
+      link="link_left_shin" />
+    <child
+      link="link_left_ankle_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_ankle_x">
+    <inertial>
+      <origin
+        xyz="0.010086 -0.00011174 -0.046622"
+        rpy="0 0 0" />
+      <mass
+        value="0.92369" />
+      <inertia
+        ixx="0.0011064"
+        ixy="-1.0094E-05"
+        ixz="-0.00032389"
+        iyy="0.0038803"
+        iyz="-1.2248E-07"
+        izz="0.0046784" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_ankle_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_ankle_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ankle_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_ankle_y" />
+    <child
+      link="link_left_ankle_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_y">
+    <inertial>
+      <origin
+        xyz="-0.0030426 -0.010199 -0.013267"
+        rpy="0 0 0" />
+      <mass
+        value="0.5474" />
+      <inertia
+        ixx="0.0015874"
+        ixy="-1.5117E-05"
+        ixz="-0.00011189"
+        iyy="0.0026199"
+        iyz="-7.0468E-05"
+        izz="0.0011599" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_hip_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_hip_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.1035 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="link_right_hip_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_x">
+    <inertial>
+      <origin
+        xyz="0.004974 -0.027209 -0.15003"
+        rpy="0 0 0" />
+      <mass
+        value="1.3873" />
+      <inertia
+        ixx="0.01184"
+        ixy="5.2959E-06"
+        ixz="-3.1735E-05"
+        iyy="0.010844"
+        iyz="-0.00010818"
+        izz="0.0025217" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_hip_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_hip_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_y" />
+    <child
+      link="link_right_hip_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.7"
+      upper="0.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_z">
+    <inertial>
+      <origin
+        xyz="8.5748E-08 0.022432 -0.38129"
+        rpy="0 0 0" />
+      <mass
+        value="0.42178" />
+      <inertia
+        ixx="0.0015256"
+        ixy="-8.5368E-10"
+        ixz="-1.1078E-09"
+        iyy="0.0017768"
+        iyz="0.0002678"
+        izz="0.00095687" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_hip_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_hip_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_x" />
+    <child
+      link="link_right_hip_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shin">
+    <inertial>
+      <origin
+        xyz="0.0030338 -0.010468 -0.18286"
+        rpy="0 0 0" />
+      <mass
+        value="1.1313" />
+      <inertia
+        ixx="0.021207"
+        ixy="-2.1009E-05"
+        ixz="0.00061069"
+        iyy="0.021795"
+        iyz="0.0012109"
+        izz="0.0014003" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_shin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_shin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_knee"
+    type="revolute">
+    <origin
+      xyz="0 2.5759E-05 -0.4275"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_z" />
+    <child
+      link="link_right_shin" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.6"
+      upper="1.6"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_ankle_y">
+    <inertial>
+      <origin
+        xyz="2.8581E-09 -4.0928E-09 -8.717E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.027847" />
+      <inertia
+        ixx="2.5806E-06"
+        ixy="-6.1344E-15"
+        ixz="9.5477E-14"
+        iyy="2.5806E-06"
+        iyz="-5.6829E-13"
+        izz="3.4954E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_ankle_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_ankle_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ankle_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.00425 -0.43"
+      rpy="0 0.12843 0" />
+    <parent
+      link="link_right_shin" />
+    <child
+      link="link_right_ankle_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_ankle_x">
+    <inertial>
+      <origin
+        xyz="0.010086 -0.00029825 -0.046621"
+        rpy="0 0 0" />
+      <mass
+        value="0.92369" />
+      <inertia
+        ixx="0.0011064"
+        ixy="-1.1386E-05"
+        ixz="-0.00032384"
+        iyy="0.0038803"
+        iyz="3.07E-06"
+        izz="0.0046784" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_ankle_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_ankle_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ankle_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_ankle_y" />
+    <child
+      link="link_right_ankle_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_torso_z">
+    <inertial>
+      <origin
+        xyz="0.021372 5.1087E-07 -0.057833"
+        rpy="0 0 0" />
+      <mass
+        value="0.29347" />
+      <inertia
+        ixx="0.00086874"
+        ixy="-4.4437E-10"
+        ixz="-0.00014595"
+        iyy="0.00080912"
+        iyz="1.4754E-09"
+        izz="0.00051202" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_torso_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_torso_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0.25"
+      rpy="0 0 0" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="link_torso_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_torso_x">
+    <inertial>
+      <origin
+        xyz="-0.019629 -0.020744 0.056913"
+        rpy="0 0 0" />
+      <mass
+        value="0.24609" />
+      <inertia
+        ixx="0.00089482"
+        ixy="3.0353E-05"
+        ixz="-0.00013929"
+        iyy="0.00088863"
+        iyz="0.00014876"
+        izz="0.00031653" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_torso_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_torso_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_torso_z" />
+    <child
+      link="link_torso_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_torso_y">
+    <inertial>
+      <origin
+        xyz="0.00012038 0.013777 0.079343"
+        rpy="0 0 0" />
+      <mass
+        value="0.79646" />
+      <inertia
+        ixx="0.0032744"
+        ixy="-7.9579E-06"
+        ixz="7.4332E-08"
+        iyy="0.0031374"
+        iyz="0.00046904"
+        izz="0.0018994" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_torso_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_torso_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="toros_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0.114"
+      rpy="0 0 0" />
+    <parent
+      link="link_torso_x" />
+    <child
+      link="link_torso_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.3"
+      upper="0.3"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shoulder_y">
+    <inertial>
+      <origin
+        xyz="0.021613 -0.058473 1.6314E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.31214" />
+      <inertia
+        ixx="0.00091699"
+        ixy="-0.00015535"
+        ixz="-3.5009E-09"
+        iyy="0.00054608"
+        iyz="-3.702E-08"
+        izz="0.0008393" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_shoulder_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_shoulder_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_y"
+    type="revolute">
+    <origin
+      xyz="0 0.20737 0.14908"
+      rpy="0.20944 0 0" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="link_left_shoulder_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shoulder_x">
+    <inertial>
+      <origin
+        xyz="-0.018244 -1.6858E-06 -0.080511"
+        rpy="0 0 0" />
+      <mass
+        value="0.31292" />
+      <inertia
+        ixx="0.0013455"
+        ixy="-4.4918E-09"
+        ixz="0.00018791"
+        iyy="0.0012673"
+        iyz="5.3143E-08"
+        izz="0.00038556" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_shoulder_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_shoulder_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_shoulder_y" />
+    <child
+      link="link_left_shoulder_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.2"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shoulder_z">
+    <inertial>
+      <origin
+        xyz="2.3375695254995E-07 0.0168401472027258 -0.243331677258931"
+        rpy="0 0 0" />
+      <mass
+        value="0.219459856132271" />
+      <inertia
+        ixx="0.000417118560166052"
+        ixy="5.68035001302371E-10"
+        ixz="-5.25958340313104E-10"
+        iyy="0.000444359303868522"
+        iyz="7.82161836438734E-05"
+        izz="0.000257433705134913" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_shoulder_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_shoulder_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_shoulder_x" />
+    <child
+      link="link_left_shoulder_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_lower_arm">
+    <inertial>
+      <origin
+        xyz="-2.00363530748695E-07 -0.0182539330754642 -0.0352703139211881"
+        rpy="0 0 0" />
+      <mass
+        value="0.129897191776178" />
+      <inertia
+        ixx="0.000228282573724895"
+        ixy="6.28044323771401E-10"
+        ixz="6.05849033029819E-10"
+        iyy="0.000254522750675354"
+        iyz="5.39431449479644E-05"
+        izz="0.000133525603301149" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_lower_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_lower_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_elbow"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.2915"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_shoulder_z" />
+    <child
+      link="link_left_lower_arm" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_wrist_z">
+    <inertial>
+      <origin
+        xyz="0.00604264824738248 0.000111072038473048 -0.159152305072614"
+        rpy="0 0 0" />
+      <mass
+        value="0.208442473251226" />
+      <inertia
+        ixx="0.000375766318207154"
+        ixy="4.37946300705277E-07"
+        ixz="4.5922820597951E-05"
+        iyy="0.000352390525799341"
+        iyz="8.59549261990531E-07"
+        izz="0.000108504876549324" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_wrist_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_wrist_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wrist_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_lower_arm" />
+    <child
+      link="link_left_wrist_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_wrist_y">
+    <inertial>
+      <origin
+        xyz="0.000244569214702818 -2.03082908304397E-05 -0.00279435453991869"
+        rpy="0 0 0" />
+      <mass
+        value="0.00513872715408391" />
+      <inertia
+        ixx="1.85042475910586E-07"
+        ixy="-3.75222001106403E-14"
+        ixz="6.81809670103843E-09"
+        iyy="1.58298915683198E-07"
+        iyz="1.049975925411E-14"
+        izz="1.0801459730807E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_wrist_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_wrist_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wrist_y"
+    type="revolute">
+    <origin
+      xyz="0.018997 0.0003548 -0.2669"
+      rpy="0 0 0.018675" />
+    <parent
+      link="link_left_wrist_z" />
+    <child
+      link="link_left_wrist_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_wrist_x">
+    <inertial>
+      <origin
+        xyz="-0.0148562563975399 -0.00248176898906433 -0.0946565149166931"
+        rpy="0 0 0" />
+      <mass
+        value="0.378070314792408" />
+      <inertia
+        ixx="0.000312804928677327"
+        ixy="1.18282601692381E-06"
+        ixz="1.39389753057436E-05"
+        iyy="0.000264568956700282"
+        iyz="-4.55595685550253E-07"
+        izz="0.000147567617244441" />
+    </inertial>
+    <!-- <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_wrist_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_left_wrist_x.STL" />
+      </geometry>
+    </collision> -->
+  </link>
+  <joint
+    name="left_wrist_x"
+    type="revolute">
+    <origin
+      xyz="0.00096099 0 -0.010958"
+      rpy="0 -0.087474 0" />
+    <parent
+      link="link_left_wrist_y" />
+    <child
+      link="link_left_wrist_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shoulder_y">
+    <inertial>
+      <origin
+        xyz="0.0216130902463085 0.0584734594084675 -2.07117408157487E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.312137722472529" />
+      <inertia
+        ixx="0.000916989757373061"
+        ixy="0.000155356072885958"
+        ixz="2.44675594761605E-09"
+        iyy="0.000546083410290685"
+        iyz="-3.55303000698702E-08"
+        izz="0.00083930256864451" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_shoulder_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_shoulder_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.20737 0.14908"
+      rpy="-0.20944 0 0" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="link_right_shoulder_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shoulder_x">
+    <inertial>
+      <origin
+        xyz="-0.0182435513240433 -1.91339659644241E-06 -0.0805104038383367"
+        rpy="0 0 0" />
+      <mass
+        value="0.312915977673331" />
+      <inertia
+        ixx="0.00134551314657334"
+        ixy="-4.42975684083379E-09"
+        ixz="0.000187908304648683"
+        iyy="0.00126726850208351"
+        iyz="5.30534238519861E-08"
+        izz="0.000385559921298056" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_shoulder_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_shoulder_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_shoulder_y" />
+    <child
+      link="link_right_shoulder_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="0.2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shoulder_z">
+    <inertial>
+      <origin
+        xyz="-3.81298480783651E-07 -0.0168400484047709 -0.243331987068336"
+        rpy="0 0 0" />
+      <mass
+        value="0.219458550765825" />
+      <inertia
+        ixx="0.000417123117486584"
+        ixy="5.68014595143607E-10"
+        ixz="5.25970676223322E-10"
+        iyy="0.000444358498398931"
+        iyz="-7.82196879769904E-05"
+        izz="0.000257436029333886" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_shoulder_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_shoulder_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_shoulder_x" />
+    <child
+      link="link_right_shoulder_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_lower_arm">
+    <inertial>
+      <origin
+        xyz="2.01074951734894E-07 0.0182422298862803 -0.0353955465593094"
+        rpy="0 0 0" />
+      <mass
+        value="0.129437603788664" />
+      <inertia
+        ixx="0.000228281338381197"
+        ixy="6.28044323673307E-10"
+        ixz="-6.05849037097559E-10"
+        iyy="0.000254520741276694"
+        iyz="-5.39431449479648E-05"
+        izz="0.000133524367957449" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_lower_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_lower_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_elbow"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.2915"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_shoulder_z" />
+    <child
+      link="link_right_lower_arm" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2"
+      upper="2"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_wrist_z">
+    <inertial>
+      <origin
+        xyz="0.0060416556892699 -0.000113191039083582 -0.159148021907514"
+        rpy="0 0 0" />
+      <mass
+        value="0.208445983235595" />
+      <inertia
+        ixx="0.000375763489440461"
+        ixy="-4.35465279914621E-07"
+        ixz="4.59225763427647E-05"
+        iyy="0.000352387475983031"
+        iyz="-8.56448053947739E-07"
+        izz="0.000108504633448175" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_wrist_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_wrist_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wrist_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_lower_arm" />
+    <child
+      link="link_right_wrist_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_wrist_y">
+    <inertial>
+      <origin
+        xyz="0.000293617935377403 5.33437349847787E-10 -0.00334803119009039"
+        rpy="0 0 0" />
+      <mass
+        value="0.00428373765289443" />
+      <inertia
+        ixx="1.45182597064823E-07"
+        ixy="-5.06422982119085E-14"
+        ixz="6.81392592730591E-09"
+        iyy="1.56177264665632E-07"
+        iyz="2.7252693837575E-14"
+        izz="6.80829491943336E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_wrist_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.92156862745098 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_wrist_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wrist_y"
+    type="revolute">
+    <origin
+      xyz="0.018997 -0.0003548 -0.2669"
+      rpy="0 0 -0.018675" />
+    <parent
+      link="link_right_wrist_z" />
+    <child
+      link="link_right_wrist_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_wrist_x">
+    <inertial>
+      <origin
+        xyz="-0.0167890946616781 0.00363670747262129 -0.102440976648816"
+        rpy="0 0 0" />
+      <mass
+        value="0.290104836118483" />
+      <inertia
+        ixx="0.000248122193583007"
+        ixy="2.43627831197861E-06"
+        ixz="1.72860807303784E-05"
+        iyy="0.000200975906839487"
+        iyz="4.34479226213833E-06"
+        izz="0.000113268332264254" />
+    </inertial>
+    <!-- <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_wrist_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/link_right_wrist_x.STL" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <joint
+    name="right_wrist_x"
+    type="revolute">
+    <origin
+      xyz="0.00096099 0 -0.010958"
+      rpy="0 -0.087474 0" />
+    <parent
+      link="link_right_wrist_y" />
+    <child
+      link="link_right_wrist_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+
+  <!-- Right hand integration -->
+  <link
+    name="right_hand_base_link">
+    <inertial>
+      <origin
+        xyz="-4.91696692515552E-05 -0.00297934158474353 -0.0724838074966582"
+        rpy="0 0 0" />
+      <mass
+        value="0.260034351097693" />
+      <inertia
+        ixx="0.000240584294557413"
+        ixy="1.12900341553271E-06"
+        ixz="5.34716263010627E-07"
+        iyy="0.000284423438713157"
+        iyz="-1.41174524262487E-05"
+        izz="0.000155854672271766" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_hand_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_hand_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="right_hand_base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_wrist_x" />
+    <child
+      link="right_hand_base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="right_thumb_1">
+    <inertial>
+      <origin
+        xyz="-0.00178423179132732 0.000649410769092404 0.00488589310434417"
+        rpy="0 0 0" />
+      <mass
+        value="0.00115518743162309" />
+      <inertia
+        ixx="5.98911473694571E-08"
+        ixy="-8.04324266712912E-09"
+        ixz="-3.29346964287939E-09"
+        iyy="4.07201940087006E-08"
+        iyz="1.1987242259973E-09"
+        izz="6.18161684388651E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_thumb_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_thumb_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0269 0.02101 -0.069"
+      rpy="-3.1416 0 -3.1416" />
+    <parent
+      link="right_hand_base_link" />
+    <child
+      link="right_thumb_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.15"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="right_thumb_2">
+    <inertial>
+      <origin
+        xyz="0.0141071308121962 0.0132720367246953 -0.00905029680056009"
+        rpy="0 0 0" />
+      <mass
+        value="0.016" />
+      <inertia
+        ixx="1.06573287501608E-06"
+        ixy="-7.61985755293293E-08"
+        ixz="-2.57609628655293E-11"
+        iyy="1.06536320559038E-06"
+        iyz="5.09603163270097E-12"
+        izz="1.39688473195303E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_thumb_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_thumb_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0063016 0.011924 0.003"
+      rpy="1.5708 0 2.7925" />
+    <parent
+      link="right_thumb_1" />
+    <child
+      link="right_thumb_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.55"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="right_thumb_3">
+    <inertial>
+      <origin
+        xyz="0.00937843602210774 0.00404407714692963 -0.00753947150343212"
+        rpy="0 0 0" />
+      <mass
+        value="0.012" />
+      <inertia
+        ixx="4.67837152048068E-07"
+        ixy="-4.50034504480504E-08"
+        ixz="-7.50604972036399E-11"
+        iyy="3.98821847444202E-07"
+        iyz="-2.80308780973008E-10"
+        izz="4.24792779381109E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_thumb_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_thumb_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_3_joint"
+    type="revolute">
+    <origin
+      xyz="0.034968 0.021325 -0.0015"
+      rpy="0 0 0" />
+    <parent
+      link="right_thumb_2" />
+    <child
+      link="right_thumb_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="right_thumb_2_joint"
+        multiplier="0.60"
+        offset="0" />
+  </joint>
+  <link
+    name="right_thumb_4">
+    <inertial>
+      <origin
+        xyz="0.0109973997213043 0.00131062737520288 -0.0073435196000655"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="6.43617695804108E-07"
+        ixy="-2.57371067432159E-07"
+        ixz="8.83834214745077E-10"
+        iyy="7.63665185138253E-07"
+        iyz="7.47494238463672E-10"
+        izz="9.2568863295396E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_thumb_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_thumb_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_4_joint"
+    type="revolute">
+    <origin
+      xyz="0.018887 0.011501 -0.0002"
+      rpy="0 0 0" />
+    <parent
+      link="right_thumb_3" />
+    <child
+      link="right_thumb_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="right_thumb_2_joint"
+        multiplier="0.8"
+        offset="0" />
+  </joint>
+  <link
+    name="right_index_1">
+    <inertial>
+      <origin
+        xyz="-0.00183546255523356 0.0123552521861834 -0.00664922294778368"
+        rpy="0 0 0" />
+      <mass
+        value="0.00719999389753264" />
+      <inertia
+        ixx="1.28371991025318E-06"
+        ixy="4.21564829206078E-08"
+        ixz="-4.10859703056649E-12"
+        iyy="5.79478432222904E-07"
+        iyz="6.39690407239206E-11"
+        izz="1.32925246769088E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_index_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_index_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_1_joint"
+    type="revolute">
+    <origin
+      xyz="0.038679 0.00056467 -0.1564"
+      rpy="-1.5359 0 -1.5708" />
+    <parent
+      link="right_hand_base_link" />
+    <child
+      link="right_index_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="right_index_2">
+    <inertial>
+      <origin
+        xyz="0.000405081354201142 0.0257028143581744 -0.00609275623125877"
+        rpy="0 0 0" />
+      <mass
+        value="0.0096859422185797" />
+      <inertia
+        ixx="2.25513837942244E-06"
+        ixy="4.11239564383381E-07"
+        ixz="-3.94499739658711E-10"
+        iyy="3.91290903748666E-07"
+        iyz="2.79706871963245E-09"
+        izz="2.30200483771215E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_index_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_index_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0016312 0.032734 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="right_index_1" />
+    <child
+      link="right_index_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="right_index_1_joint"
+        multiplier="1.05"
+        offset="0" />
+  </joint>
+  <link
+    name="right_middle_1">
+    <inertial>
+      <origin
+        xyz="-0.00229221489529491 0.0122787164691098 -0.00664923691414206"
+        rpy="0 0 0" />
+      <mass
+        value="0.00719999454699651" />
+      <inertia
+        ixx="1.27961146095209E-06"
+        ixy="6.81307502326408E-08"
+        ixz="-6.13869092479439E-12"
+        iyy="5.83570383259162E-07"
+        iyz="6.33401074034573E-11"
+        izz="1.32923656099557E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_middle_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_middle_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0171 0.00056467 -0.157"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="right_hand_base_link" />
+    <child
+      link="right_middle_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="right_middle_2">
+    <inertial>
+      <origin
+        xyz="7.55635061812504E-05 0.0274472409700489 -0.00610051225570537"
+        rpy="0 0 0" />
+      <mass
+        value="0.0104603374357648" />
+      <inertia
+        ixx="2.75802690517233E-06"
+        ixy="4.66354191789105E-07"
+        ixz="-3.73412436067728E-12"
+        iyy="4.22418749660047E-07"
+        iyz="7.48571284682703E-11"
+        izz="2.80694637912416E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_middle_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_middle_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0028436 0.032651 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="right_middle_1" />
+    <child
+      link="right_middle_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="right_middle_1_joint"
+        multiplier="1.05"
+        offset="0" />
+  </joint>
+  <link
+    name="right_ring_1">
+    <inertial>
+      <origin
+        xyz="-0.00240481178777661 0.0122571709475593 -0.00664923625225445"
+        rpy="0 0 0" />
+      <mass
+        value="0.00719998997814135" />
+      <inertia
+        ixx="1.27830103769765E-06"
+        ixy="7.45073064952646E-08"
+        ixz="-6.73880804360017E-12"
+        iyy="5.84879553082369E-07"
+        iyz="6.3350585052199E-11"
+        izz="1.32923557625193E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_ring_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_ring_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ring_1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0045302 0.00056467 -0.15683"
+      rpy="-1.6232 0 -1.5708" />
+    <parent
+      link="right_hand_base_link" />
+    <child
+      link="right_ring_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="right_ring_2">
+    <inertial>
+      <origin
+        xyz="0.000666830906754845 0.0256973412492289 -0.0060927714564012"
+        rpy="0 0 0" />
+      <mass
+        value="0.0096859390369724" />
+      <inertia
+        ixx="2.26332196405867E-06"
+        ixy="3.92172318180451E-07"
+        ixz="-3.65715440420713E-10"
+        iyy="3.83108005467821E-07"
+        iyz="2.80158649618184E-09"
+        izz="2.30200501593561E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_ring_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_ring_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ring_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0031431 0.032624 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="right_ring_1" />
+    <child
+      link="right_ring_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="right_ring_1_joint"
+        multiplier="1.05"
+        offset="0" />
+  </joint>
+  <link
+    name="right_little_1">
+    <inertial>
+      <origin
+        xyz="-0.00316844591541324 0.0120823779446085 -0.00664923024026526"
+        rpy="0 0 0" />
+      <mass
+        value="0.00719994987013217" />
+      <inertia
+        ixx="1.26624415714453E-06"
+        ixy="1.17303714016617E-07"
+        ixz="-1.15327375313821E-11"
+        iyy="5.96925804604496E-07"
+        iyz="6.36110319315301E-11"
+        izz="1.32922857962206E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_little_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_little_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_little_1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.025916 0.00056467 -0.15365"
+      rpy="-1.6755 0 -1.5708" />
+    <parent
+      link="right_hand_base_link" />
+    <child
+      link="right_little_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="right_little_2">
+    <inertial>
+      <origin
+        xyz="0.0204417303421136 -0.00469494170410353 -0.00609999668427265"
+        rpy="0 0 0" />
+      <mass
+        value="0.0075928240732547" />
+      <inertia
+        ixx="2.31546812157118E-07"
+        ixy="-7.27021381773956E-08"
+        ixz="2.3664966486269E-11"
+        iyy="1.27663957628266E-06"
+        iyz="-7.58283070676144E-12"
+        izz="1.23909562166535E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_little_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/right_little_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_little_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.005182 0.032363 -0.00055"
+      rpy="0 0 1.5708" />
+    <parent
+      link="right_little_1" />
+    <child
+      link="right_little_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="right_little_1_joint"
+        multiplier="1.18"
+        offset="0" />  
+  </joint>
+
+
+  <!-- Left hand integration -->
+  <link
+    name="left_hand_base_link">
+    <inertial>
+      <origin
+        xyz="-5.81855257230368E-05 0.0036855956860619 -0.0826153899028331"
+        rpy="0 0 0" />
+      <mass
+        value="0.260034351097693" />
+      <inertia
+        ixx="0.000223659755666589"
+        ixy="-1.13436481934473E-06"
+        ixz="5.34309354519849E-07"
+        iyy="0.000266799681483547"
+        iyz="1.40944118648867E-05"
+        izz="0.000132857769181899" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_hand_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_hand_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hand_base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_wrist_x" />
+    <child
+      link="left_hand_base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+  <link
+    name="left_thumb_1">
+    <inertial>
+      <origin
+        xyz="0.00178423404495211 -0.000649404577309123 -0.0031358931043441"
+        rpy="0 0 0" />
+      <mass
+        value="0.00115518743162309" />
+      <inertia
+        ixx="5.98912200501135E-08"
+        ixy="-8.04315731947437E-09"
+        ixz="-3.29346919841095E-09"
+        iyy="4.07201234589857E-08"
+        iyz="1.19872544716431E-09"
+        izz="6.18161684388651E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_thumb_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_thumb_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0269 -0.02101 -0.07075"
+      rpy="0 0 0" />
+    <parent
+      link="left_hand_base_link" />
+    <child
+      link="left_thumb_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="1.15"
+      effort="10"
+      velocity="1" />
+  </joint>
+
+   <link
+    name="left_thumb_2">
+    <inertial>
+      <origin
+        xyz="0.0141077165126408 0.013272947664556 0.00905027694248729"
+        rpy="0 0 0" />
+      <mass
+        value="0.016" />
+      <inertia
+        ixx="1.06585698719649E-06"
+        ixy="-7.62263321516971E-08"
+        ixz="2.95033226564006E-11"
+        iyy="1.06558155578278E-06"
+        iyz="1.55271585897891E-11"
+        izz="1.39709651951733E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_thumb_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_thumb_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_2_joint"
+    type="revolute">
+    <origin
+      xyz="0.0063016 -0.011924 -0.00125"
+      rpy="-1.5708 0 -0.34907" />
+    <parent
+      link="left_thumb_1" />
+    <child
+      link="left_thumb_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.55"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="left_thumb_3">
+    <inertial>
+      <origin
+        xyz="0.0175210608796189 -0.000458783419545392 0.00589186777098984"
+        rpy="0 0 0" />
+      <mass
+        value="0.012" />
+      <inertia
+        ixx="4.67948369620491E-07"
+        ixy="-4.4974688607358E-08"
+        ixz="1.01425359574474E-11"
+        iyy="3.98794196148187E-07"
+        iyz="2.07037920898898E-10"
+        izz="4.24723917424999E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_thumb_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_thumb_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_3_joint"
+    type="revolute">
+    <origin
+      xyz="0.026828 0.02583 0.00315"
+      rpy="0 0 0" />
+    <parent
+      link="left_thumb_2" />
+    <child
+      link="left_thumb_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="left_thumb_2_joint"
+        multiplier="0.60"
+        offset="0" />
+  </joint>
+  <link
+    name="left_thumb_4">
+    <inertial>
+      <origin
+        xyz="0.0159972574626049 0.0063105797700872 0.0073433144647696"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="6.4362640059723E-07"
+        ixy="-2.57376746969386E-07"
+        ixz="-8.63129696542143E-10"
+        iyy="7.63678708562786E-07"
+        iyz="-7.21288836303217E-10"
+        izz="9.2570163408105E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_thumb_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_thumb_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_thumb_4_joint"
+    type="revolute">
+    <origin
+      xyz="0.027027 0.0069965 -0.00145"
+      rpy="0 0 0" />
+    <parent
+      link="left_thumb_3" />
+    <child
+      link="left_thumb_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="left_thumb_2_joint"
+        multiplier="0.8"
+        offset="0" />
+  </joint>
+  <link
+    name="left_index_1">
+    <inertial>
+      <origin
+        xyz="-0.00183599258071257 0.0123544163382434 -0.00665152565125451"
+        rpy="0 0 0" />
+      <mass
+        value="0.0071995003148682" />
+      <inertia
+        ixx="1.28363093823079E-06"
+        ixy="4.22091506924093E-08"
+        ixz="-1.1741465013013E-12"
+        iyy="5.79447850871435E-07"
+        iyz="-8.63816965731366E-11"
+        izz="1.32914845722975E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_index_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_index_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_1_joint"
+    type="revolute">
+    <origin
+      xyz="0.025387 -0.00056467 -0.15686"
+      rpy="-1.6057 0 1.5708" />
+    <parent
+      link="left_hand_base_link" />
+    <child
+      link="left_index_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="left_index_2">
+    <inertial>
+      <origin
+        xyz="0.000405420051948283 0.0257003783460073 -0.00610830787560272"
+        rpy="0 0 0" />
+      <mass
+        value="0.00968688267109518" />
+      <inertia
+        ixx="2.25563043691857E-06"
+        ixy="4.11282885240034E-07"
+        ixz="3.87338024122588E-10"
+        iyy="3.91279806505403E-07"
+        iyz="-2.76559043550419E-09"
+        izz="2.30247359295784E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_index_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_index_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0016312 0.032734 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="left_index_1" />
+    <child
+      link="left_index_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="left_index_1_joint"
+        multiplier="1.05"
+        offset="0" />
+  </joint>
+  <link
+    name="left_middle_1">
+    <inertial>
+      <origin
+        xyz="-0.00229271394242232 0.0122778605414752 -0.00665151068667683"
+        rpy="0 0 0" />
+      <mass
+        value="0.00719950322487974" />
+      <inertia
+        ixx="1.27951858905779E-06"
+        ixy="6.81813021711596E-08"
+        ixz="1.58551121583499E-12"
+        iyy="5.83543537428452E-07"
+        iyz="-8.56179612608701E-11"
+        izz="1.32913234511164E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_middle_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_middle_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_1_joint"
+    type="revolute">
+    <origin
+      xyz="0.0037996 -0.00056467 -0.157"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="left_hand_base_link" />
+    <child
+      link="left_middle_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="left_middle_2">
+    <inertial>
+      <origin
+        xyz="7.51983994427274E-05 0.027448753770842 -0.00610022997575017"
+        rpy="0 0 0" />
+      <mass
+        value="0.0104611931926301" />
+      <inertia
+        ixx="2.75831931773332E-06"
+        ixy="4.66412841401028E-07"
+        ixz="7.35766561775226E-12"
+        iyy="4.22466538741155E-07"
+        iyz="-1.79608426686769E-11"
+        izz="2.80722617348706E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_middle_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_middle_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0028436 0.032651 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="left_middle_1" />
+    <child
+      link="left_middle_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="left_middle_1_joint"
+        multiplier="1.05"
+        offset="0" />
+  </joint>
+  <link
+    name="left_ring_1">
+    <inertial>
+      <origin
+        xyz="-0.00240530428455066 0.0122563079467745 -0.00665150968297497"
+        rpy="0 0 0" />
+      <mass
+        value="0.00719949770218712" />
+      <inertia
+        ixx="1.27820682409824E-06"
+        ixy="7.45572429780093E-08"
+        ixz="2.25718181808859E-12"
+        iyy="5.84853511073517E-07"
+        iyz="-8.56222330411309E-11"
+        izz="1.32913088941838E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_ring_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_ring_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.017813 -0.00056467 -0.15614"
+      rpy="-1.5184 0 1.5708" />
+    <parent
+      link="left_hand_base_link" />
+    <child
+      link="left_ring_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="left_ring_2">
+    <inertial>
+      <origin
+        xyz="0.000667145407605998 0.0256949163202511 -0.00610829894053159"
+        rpy="0 0 0" />
+      <mass
+        value="0.00968685177133057" />
+      <inertia
+        ixx="2.26381138740299E-06"
+        ixy="3.92210300202205E-07"
+        ixz="3.58404653503583E-10"
+        iyy="3.83095000534084E-07"
+        iyz="-2.77027363965469E-09"
+        izz="2.30247104599333E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_ring_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_ring_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ring_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0031431 0.032624 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="left_ring_1" />
+    <child
+      link="left_ring_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="left_ring_1_joint"
+        multiplier="1.05"
+        offset="0" />
+  </joint>
+  <link
+    name="left_little_1">
+    <inertial>
+      <origin
+        xyz="-0.00316889023513399 0.0120814769898197 -0.00665148964848"
+        rpy="0 0 0" />
+      <mass
+        value="0.0071994553320001" />
+      <inertia
+        ixx="1.26614239360362E-06"
+        ixy="1.17349328114653E-07"
+        ixz="6.69925886240907E-12"
+        iyy="5.96905140854994E-07"
+        iyz="-8.54914063893311E-11"
+        izz="1.32912203576944E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_little_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_little_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.039144 -0.00056467 -0.15226"
+      rpy="-1.4661 0 1.5708" />
+    <parent
+      link="left_hand_base_link" />
+    <child
+      link="left_little_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.6"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="left_little_2">
+    <inertial>
+      <origin
+        xyz="0.00469503836926433 0.020441957551037 -0.0061004930536056"
+        rpy="0 0 0" />
+      <mass
+        value="0.00759267726265222" />
+      <inertia
+        ixx="1.27661762368947E-06"
+        ixy="7.27034842413144E-08"
+        ixz="1.62724400979504E-12"
+        iyy="2.31536498425727E-07"
+        iyz="-9.71604458446237E-12"
+        izz="1.23907231734916E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_little_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4ne1_g-10000_primitiv-kinematic_rev.C/meshes/left_little_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_little_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.005182 0.032363 -0.00055"
+      rpy="0 0 0" />
+    <parent
+      link="left_little_1" />
+    <child
+      link="left_little_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+    <mimic
+        joint="left_little_1_joint"
+        multiplier="1.18"
+        offset="0" />  
+  </joint>
+
+</robot>

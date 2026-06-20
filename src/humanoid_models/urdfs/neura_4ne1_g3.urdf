@@ -1,0 +1,5731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="neura_4ne1_g3">
+  <link
+    name="link_pelvis">
+    <inertial>
+      <origin
+        xyz="-0.0086395 -7.5934E-07 0.029499"
+        rpy="0 0 0" />
+      <mass
+        value="16.118" />
+      <inertia
+        ixx="0.057612"
+        ixy="-6.8664E-06"
+        ixz="0.0032581"
+        iyy="0.065726"
+        iyz="2.1042E-06"
+        izz="0.046191" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_pelvis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_pelvis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_left_hip_y">
+    <inertial>
+      <origin
+        xyz="-0.000506138729082792 0.0112373002622916 -0.00143448184537454"
+        rpy="0 0 0" />
+      <mass
+        value="4.00903450266447" />
+      <inertia
+        ixx="0.00713794915204064"
+        ixy="1.51152387687379E-05"
+        ixz="-0.000111923460871175"
+        iyy="0.0112202987752195"
+        iyz="0.000121789176989662"
+        izz="0.0067934625426072" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_y"
+    type="revolute">
+    <origin
+      xyz="0 0.1035 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="link_left_hip_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.0944"
+      upper="2.0944"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_hip_x">
+    <inertial>
+      <origin
+        xyz="0.00406462367653627 0.00870018508846498 -0.186220193130033"
+        rpy="0 0 0" />
+      <mass
+        value="10.2228277982283" />
+      <inertia
+        ixx="0.0613049760444113"
+        ixy="5.31434932173072E-06"
+        ixz="0.000403826793380821"
+        iyy="0.0615179013223006"
+        iyz="-0.00523062951849872"
+        izz="0.0313224314226832" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_y" />
+    <child
+      link="link_left_hip_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.1781"
+      upper="0.2182"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_hip_z">
+    <inertial>
+      <origin
+        xyz="0.000181430579590653 -0.0184387945743284 -0.385101617889846"
+        rpy="0 0 0" />
+      <mass
+        value="4.93523270926625" />
+      <inertia
+        ixx="0.0119313706020947"
+        ixy="-3.15416900033797E-05"
+        ixz="-3.46958356093343E-05"
+        iyy="0.0130051842506338"
+        iyz="-0.00218238572091356"
+        izz="0.00851307805207318" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_x" />
+    <child
+      link="link_left_hip_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shin">
+    <inertial>
+      <origin
+        xyz="-0.00484878041202884 0.0106100065393989 -0.103873426905647"
+        rpy="0 0 0" />
+      <mass
+        value="7.74372525856822" />
+      <inertia
+        ixx="0.053113069392911"
+        ixy="-0.000102791858834412"
+        ixz="0.00162662490197074"
+        iyy="0.0553321274854949"
+        iyz="-0.00503397325670986"
+        izz="0.0128371523765536" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_shin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_shin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_knee"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.4275"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_z" />
+    <child
+      link="link_left_shin" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.0944"
+      upper="2.0944"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_ankle_y">
+    <inertial>
+      <origin
+        xyz="4.49572640226492E-09 -1.44792702827523E-09 -3.62852675683811E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0787152110579414" />
+      <inertia
+        ixx="5.34622532541518E-06"
+        ixy="-2.85150591945564E-09"
+        ixz="5.03169259960968E-12"
+        iyy="3.64111547849359E-06"
+        iyz="-4.318232566519E-10"
+        izz="6.15187014540896E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_ankle_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_ankle_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ankle_y"
+    type="revolute">
+    <origin
+      xyz="0 0.00425 -0.43"
+      rpy="0 0.13963 0" />
+    <parent
+      link="link_left_shin" />
+    <child
+      link="link_left_ankle_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.526"
+      upper="1.0472"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_ankle_x">
+    <inertial>
+      <origin
+        xyz="0.0339760255150369 -0.000388107010576677 -0.0387990799763026"
+        rpy="0 0 0" />
+      <mass
+        value="3.12254468719414" />
+      <inertia
+        ixx="0.00478158335244105"
+        ixy="9.01833476125694E-05"
+        ixz="-0.00141976831235352"
+        iyy="0.0179693315100309"
+        iyz="1.63949755826698E-05"
+        izz="0.0197843767803159" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_ankle_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_ankle_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ankle_x"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_ankle_y" />
+    <child
+      link="link_left_ankle_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.2618"
+      upper="0.2618"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_heel_x">
+    <inertial>
+      <origin
+        xyz="0.00416352133793506 5.01295538066215E-06 1.82972434104034E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.038957691314588" />
+      <inertia
+        ixx="6.80514860834926E-07"
+        ixy="7.1896978868079E-09"
+        ixz="2.91208299106618E-09"
+        iyy="1.18666364755923E-05"
+        iyz="1.20779281280979E-10"
+        izz="1.18663743053035E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_heel_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.270588235294118 0.270588235294118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_heel_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_heel_x"
+    type="revolute">
+    <origin
+      xyz="-0.047858 0.034971 -0.021639"
+      rpy="0.016108 -0.13963 0.00019138" />
+    <parent
+      link="link_left_ankle_x" />
+    <child
+      link="link_left_outer_heel_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_heel_x">
+    <inertial>
+      <origin
+        xyz="0.00216350502921535 4.94113619692316E-06 -2.07336127389102E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0389577182651912" />
+      <inertia
+        ixx="6.80515154330101E-07"
+        ixy="7.27437557944421E-09"
+        ixz="-2.75742113099E-09"
+        iyy="1.18666510970952E-05"
+        iyz="-1.23608458509227E-10"
+        izz="1.1866391152882E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_heel_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.270588235294118 0.270588235294118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_heel_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_heel_x"
+    type="revolute">
+    <origin
+      xyz="-0.047858 -0.035029 -0.021544"
+      rpy="-0.016185 -0.13963 0.00019138" />
+    <parent
+      link="link_left_ankle_x" />
+    <child
+      link="link_left_inner_heel_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_left_foot_fts">
+    <inertial>
+      <origin
+        xyz="0.0163463168163432 -0.0131143581298579 -0.00425948529269515"
+        rpy="0 0 0" />
+      <mass
+        value="1.14486987794471" />
+      <inertia
+        ixx="0.00112841961645671"
+        ixy="0.000826512145850113"
+        ixz="3.51998457789591E-07"
+        iyy="0.00149452633431082"
+        iyz="-3.43398426422714E-07"
+        izz="0.00258433708285106" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_left_foot_fts.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_left_foot_fts.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_foot_fts"
+    type="revolute">
+    <origin
+      xyz="-0.0023321 -7.9132E-05 -0.058111"
+      rpy="-0.088826 -0.10788 0.68139" />
+    <parent
+      link="link_left_ankle_x" />
+    <child
+      link="sensor_left_foot_fts" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_calf_y">
+    <inertial>
+      <origin
+        xyz="-1.62679210380379E-09 2.32956068324519E-09 -4.96234164870657E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0489242727171444" />
+      <inertia
+        ixx="3.14927991133251E-06"
+        ixy="-6.13437354027562E-15"
+        ixz="-9.54771350137878E-14"
+        iyy="3.14927983140682E-06"
+        iyz="5.68294586178169E-13"
+        izz="3.95495653590151E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_calf_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_calf_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_calf_y"
+    type="revolute">
+    <origin
+      xyz="-0.04479 0.03425 -0.153"
+      rpy="0 0.0025491 0.7854" />
+    <parent
+      link="link_left_shin" />
+    <child
+      link="link_left_outer_calf_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_calf_x">
+    <inertial>
+      <origin
+        xyz="4.11999822212683E-06 0.00243563908577976 -0.0934499414059262"
+        rpy="0 0 0" />
+      <mass
+        value="0.848975417930118" />
+      <inertia
+        ixx="0.000753249244397875"
+        ixy="-9.93048166882289E-07"
+        ixz="-2.70954608988085E-08"
+        iyy="0.00076016944440744"
+        iyz="1.36133319331922E-05"
+        izz="0.000334276704568097" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_calf_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_calf_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_calf_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_outer_calf_y" />
+    <child
+      link="link_left_outer_calf_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_calf_z">
+    <inertial>
+      <origin
+        xyz="0.00232948474517592 8.07006952874278E-07 0.118097071081333"
+        rpy="0 0 0" />
+      <mass
+        value="0.313319621015637" />
+      <inertia
+        ixx="0.000614524641121494"
+        ixy="1.96237812059813E-08"
+        ixz="-1.19151648481413E-05"
+        iyy="0.000616005271123193"
+        iyz="-1.10623596068453E-09"
+        izz="1.04901880503697E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_calf_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_calf_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_calf_z"
+    type="prismatic">
+    <origin
+      xyz="-3.1898E-05 0.0072217 -0.26877"
+      rpy="0.017937 -0.0018027 -0.78521" />
+    <parent
+      link="link_left_outer_calf_x" />
+    <child
+      link="link_left_outer_calf_z" />
+    <axis
+      xyz="0.019877 0.032181 0.99928" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_heel_y">
+    <inertial>
+      <origin
+        xyz="-3.59169852193197E-09 0.000146255806490192 -0.0106586927127554"
+        rpy="0 0 0" />
+      <mass
+        value="0.106784924675165" />
+      <inertia
+        ixx="1.67979927314747E-05"
+        ixy="-2.08387606231217E-11"
+        ixz="5.38099800352407E-11"
+        iyy="1.57814946060139E-05"
+        iyz="1.43482305467705E-12"
+        izz="1.01541788874408E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_heel_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_heel_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_heel_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_outer_calf_z" />
+    <child
+      link="link_left_outer_heel_y" />
+    <axis
+      xyz="0.0001895 0.99948 -0.032191" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_calf_y">
+    <inertial>
+      <origin
+        xyz="1.62676205839318E-09 -2.32956234857973E-09 -4.96187535503623E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0489242727171443" />
+      <inertia
+        ixx="3.14927991133251E-06"
+        ixy="-6.13437332851738E-15"
+        ixz="9.54771385582567E-14"
+        iyy="3.14927983140682E-06"
+        iyz="-5.68294585702954E-13"
+        izz="3.9549565359015E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_calf_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_calf_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_calf_y"
+    type="revolute">
+    <origin
+      xyz="-0.04479 -0.02575 -0.153"
+      rpy="0 0.0025894 -0.7854" />
+    <parent
+      link="link_left_shin" />
+    <child
+      link="link_left_inner_calf_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_calf_x">
+    <inertial>
+      <origin
+        xyz="-4.11716193474132E-06 -0.00244659465890817 -0.0934496551839978"
+        rpy="0 0 0" />
+      <mass
+        value="0.848975414366113" />
+      <inertia
+        ixx="0.000753249236167051"
+        ixy="-9.93047583568022E-07"
+        ixz="2.70968734789421E-08"
+        iyy="0.00076016624310974"
+        iyz="-1.36632395337627E-05"
+        izz="0.000334279898308089" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_calf_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_calf_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_calf_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_inner_calf_y" />
+    <child
+      link="link_left_inner_calf_x" />
+    <axis
+      xyz="0 1 -0.0024657" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_calf_z">
+    <inertial>
+      <origin
+        xyz="0.00234421873529746 1.26880801813722E-06 0.118096737832035"
+        rpy="0 0 0" />
+      <mass
+        value="0.313320098304849" />
+      <inertia
+        ixx="0.000614540806470094"
+        ixy="-1.96444268170465E-08"
+        ixz="-1.19984649952197E-05"
+        iyy="0.000615987704347842"
+        iyz="-1.76412256121178E-09"
+        izz="1.04934906665901E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_calf_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_calf_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_calf_z"
+    type="prismatic">
+    <origin
+      xyz="2.9156E-05 -0.0072536 -0.26868"
+      rpy="-0.017989 -0.0018305 0.78559" />
+    <parent
+      link="link_left_inner_calf_x" />
+    <child
+      link="link_left_inner_calf_z" />
+    <axis
+      xyz="0.019853 0 0.9998" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_heel_y">
+    <inertial>
+      <origin
+        xyz="-3.69222502571986E-09 0.000146256020492785 -0.0106586959451338"
+        rpy="0 0 0" />
+      <mass
+        value="0.10678492562465" />
+      <inertia
+        ixx="1.67979927828499E-05"
+        ixy="-2.03919964173445E-11"
+        ixz="5.47753768070164E-11"
+        iyy="1.57814947138576E-05"
+        iyz="1.83010630326036E-12"
+        izz="1.01541789643223E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_heel_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_heel_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_heel_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_inner_calf_z" />
+    <child
+      link="link_left_inner_heel_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_hip_x_act">
+    <inertial>
+      <origin
+        xyz="0.0249779634165673 -0.00123548215690075 0.00183364965552979"
+        rpy="0 0 0" />
+      <mass
+        value="2.27538635318406" />
+      <inertia
+        ixx="0.00319951947313191"
+        ixy="3.58979063456653E-06"
+        ixz="-7.86783033524433E-06"
+        iyy="0.00193545851988731"
+        iyz="6.61229574510086E-05"
+        izz="0.00187515248875823" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_x_act.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_x_act.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_x_act"
+    type="revolute">
+    <origin
+      xyz="-0.02 -0.0035 -0.175"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_x" />
+    <child
+      link="link_left_hip_x_act" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_hip_y_pin">
+    <inertial>
+      <origin
+        xyz="0.00800319004962651 6.66963984041757E-11 3.34327843187765E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0232328938385498" />
+      <inertia
+        ixx="2.47126214295172E-07"
+        ixy="-3.01636748426485E-14"
+        ixz="-2.00049702696394E-14"
+        iyy="6.75963701248733E-06"
+        iyz="7.94840892754412E-14"
+        izz="6.75963754439173E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_y_pin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_y_pin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_y_pin"
+    type="revolute">
+    <origin
+      xyz="-0.02 0.024 -0.092"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_y" />
+    <child
+      link="link_left_hip_y_pin" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_hip_y_bar">
+    <inertial>
+      <origin
+        xyz="1.33718481593603E-05 0.0290316461382475 0.0130522638488174"
+        rpy="0 0 0" />
+      <mass
+        value="0.244949497057164" />
+      <inertia
+        ixx="0.000158059174745626"
+        ixy="5.84607887308029E-08"
+        ixz="-1.73358398074537E-07"
+        iyy="4.79311030205808E-05"
+        iyz="-4.27094681637524E-05"
+        izz="0.000160178578127429" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_y_bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_hip_y_bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_y_bar"
+    type="revolute">
+    <origin
+      xyz="0 -0.06633 -0.022368"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_y_pin" />
+    <child
+      link="link_left_hip_y_bar" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_y">
+    <inertial>
+      <origin
+        xyz="-0.000506145733431216 -0.0112373009583492 -0.00143281286358218"
+        rpy="0 0 0" />
+      <mass
+        value="4.00903284896735" />
+      <inertia
+        ixx="0.00713794536676733"
+        ixy="-1.51187713178919E-05"
+        ixz="-0.000111849385393811"
+        iyy="0.011220293256026"
+        iyz="-0.000121770992026603"
+        izz="0.00679346175577225" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.1035 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="link_right_hip_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.0944"
+      upper="2.0944"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_x">
+    <inertial>
+      <origin
+        xyz="0.00404795695876639 -0.008701068450837 -0.186089809227089"
+        rpy="0 0 0" />
+      <mass
+        value="10.2596480132946" />
+      <inertia
+        ixx="0.0616910930387261"
+        ixy="-1.50488126588394E-06"
+        ixz="0.000402346724091295"
+        iyy="0.0618272386134082"
+        iyz="0.00527914999120474"
+        izz="0.0314601324027531" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_y" />
+    <child
+      link="link_right_hip_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.2182"
+      upper="1.1781"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_z">
+    <inertial>
+      <origin
+        xyz="0.000187727667343746 0.0184380866574812 -0.385098316017054"
+        rpy="0 0 0" />
+      <mass
+        value="4.93481409879477" />
+      <inertia
+        ixx="0.0119313756711534"
+        ixy="3.15354856112424E-05"
+        ixz="-3.47068672612736E-05"
+        iyy="0.0130051593773659"
+        iyz="0.00218237689112462"
+        izz="0.00851305497067476" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_x" />
+    <child
+      link="link_right_hip_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shin">
+    <inertial>
+      <origin
+        xyz="-0.00482942814129587 -0.0106101104412642 -0.103873953270349"
+        rpy="0 0 0" />
+      <mass
+        value="7.74354588864594" />
+      <inertia
+        ixx="0.0531130130292449"
+        ixy="0.000104520631207344"
+        ixz="0.00162531623391108"
+        iyy="0.0553318520392276"
+        iyz="0.00503422162361835"
+        izz="0.0128368170635821" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_shin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_shin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_knee"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.4275"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_z" />
+    <child
+      link="link_right_shin" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.0944"
+      upper="2.0944"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_ankle_y">
+    <inertial>
+      <origin
+        xyz="7.12194716812053E-08 -1.44792544620742E-09 5.75250634460289E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0787152110579412" />
+      <inertia
+        ixx="5.34622329434346E-06"
+        ixy="2.76530499835311E-09"
+        ixz="-3.34144987306475E-12"
+        iyy="3.64111547849359E-06"
+        iyz="-3.38051883075236E-10"
+        izz="6.15187217648065E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_ankle_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_ankle_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ankle_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.00425 -0.43"
+      rpy="0 0.13963 0" />
+    <parent
+      link="link_right_shin" />
+    <child
+      link="link_right_ankle_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.526"
+      upper="1.0472"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_ankle_x">
+    <inertial>
+      <origin
+        xyz="0.0339676618158035 -0.000188328163156337 -0.0383553677837141"
+        rpy="0 0 0" />
+      <mass
+        value="3.05295356044099" />
+      <inertia
+        ixx="0.00463446897862856"
+        ixy="-8.84610887175399E-05"
+        ixz="-0.00138386834980124"
+        iyy="0.0173540154214149"
+        iyz="-1.31612339466412E-05"
+        izz="0.0190774074458935" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_ankle_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_ankle_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ankle_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_ankle_y" />
+    <child
+      link="link_right_ankle_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.2618"
+      upper="0.2618"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_heel_x">
+    <inertial>
+      <origin
+        xyz="0.00216347694095138 4.35618244176705E-06 3.08465783671608E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0389577583708737" />
+      <inertia
+        ixx="6.80515472598784E-07"
+        ixy="6.17294058901408E-09"
+        ixz="4.69994745756757E-09"
+        iyy="1.18666046491504E-05"
+        iyz="1.72518092691492E-10"
+        izz="1.18664994507519E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_heel_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.270588235294118 0.270588235294118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_heel_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_heel_x"
+    type="revolute">
+    <origin
+      xyz="-0.047858 -0.035 -0.021591"
+      rpy="-0.016062 -0.13963 0" />
+    <parent
+      link="link_right_ankle_x" />
+    <child
+      link="link_right_outer_heel_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_heel_x">
+    <inertial>
+      <origin
+        xyz="0.00416353524424499 5.00574530384879E-06 -1.84631598609819E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0389576695811483" />
+      <inertia
+        ixx="6.80514732237219E-07"
+        ixy="7.36307313318923E-09"
+        ixz="-2.43943444319712E-09"
+        iyy="1.18666300363919E-05"
+        iyz="-1.10650952135947E-10"
+        izz="1.18663523495339E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_heel_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.270588235294118 0.270588235294118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_heel_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_heel_x"
+    type="revolute">
+    <origin
+      xyz="-0.047858 0.035 -0.021591"
+      rpy="0.016232 -0.13963 0" />
+    <parent
+      link="link_right_ankle_x" />
+    <child
+      link="link_right_inner_heel_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_right_foot_fts">
+    <inertial>
+      <origin
+        xyz="0.0163463163955588 -0.0131143578882258 -0.00425948518419617"
+        rpy="0 0 0" />
+      <mass
+        value="1.1448698753937" />
+      <inertia
+        ixx="0.00112841957919964"
+        ixy="0.00082651213868067"
+        ixz="3.52000796842335E-07"
+        iyy="0.0014945263434739"
+        iyz="-3.43399378565155E-07"
+        izz="0.00258433705495251" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_right_foot_fts.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_right_foot_fts.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_foot_fts"
+    type="revolute">
+    <origin
+      xyz="-0.0023321 0 -0.058111"
+      rpy="-0.087762 -0.10874 0.68128" />
+    <parent
+      link="link_right_ankle_x" />
+    <child
+      link="sensor_right_foot_fts" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_calf_y">
+    <inertial>
+      <origin
+        xyz="1.62676042081422E-09 -2.32955549295255E-09 -4.96157559481958E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0489242727171443" />
+      <inertia
+        ixx="3.14927991133251E-06"
+        ixy="-6.13437184620973E-15"
+        ixz="9.54771345083804E-14"
+        iyy="3.14927983140682E-06"
+        iyz="-5.68294586042925E-13"
+        izz="3.9549565359015E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_calf_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_calf_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_calf_y"
+    type="revolute">
+    <origin
+      xyz="-0.04479 -0.03425 -0.153"
+      rpy="0 0.0026718 -0.7854" />
+    <parent
+      link="link_right_shin" />
+    <child
+      link="link_right_outer_calf_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_calf_x">
+    <inertial>
+      <origin
+        xyz="-4.11710554140687E-06 -0.00244151578310564 -0.0934497880033325"
+        rpy="0 0 0" />
+      <mass
+        value="0.848975414644723" />
+      <inertia
+        ixx="0.000753249236095413"
+        ixy="-9.93049144595778E-07"
+        ixz="2.70408825411047E-08"
+        iyy="0.000760167726961559"
+        iyz="-1.36400929543682E-05"
+        izz="0.000334278414485766" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_calf_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_calf_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_calf_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_outer_calf_y" />
+    <child
+      link="link_right_outer_calf_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_calf_z">
+    <inertial>
+      <origin
+        xyz="0.00234668455119459 1.2687937088196E-06 0.118096689236485"
+        rpy="0 0 0" />
+      <mass
+        value="0.313320098190083" />
+      <inertia
+        ixx="0.000614540305878385"
+        ixy="-1.96444611382096E-08"
+        ixz="-1.20110772801824E-05"
+        iyy="0.000615987705054349"
+        iyz="-1.76374609538341E-09"
+        izz="1.04939919396964E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_calf_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_calf_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_calf_z"
+    type="prismatic">
+    <origin
+      xyz="2.7586E-05 -0.007239 -0.26872"
+      rpy="-0.017951 -0.0018892 0.7854" />
+    <parent
+      link="link_right_outer_calf_x" />
+    <child
+      link="link_right_outer_calf_z" />
+    <axis
+      xyz="0.019874 0 0.9998" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_heel_y">
+    <inertial>
+      <origin
+        xyz="-3.69959554658017E-09 0.000146256020691071 -0.0106586959266708"
+        rpy="0 0 0" />
+      <mass
+        value="0.106784925627418" />
+      <inertia
+        ixx="1.67979927829178E-05"
+        ixy="-2.04030483471815E-11"
+        ixz="5.47779471022046E-11"
+        iyy="1.57814947135346E-05"
+        iyz="1.82547486861066E-12"
+        izz="1.01541789640065E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_heel_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_heel_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_heel_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_outer_calf_z" />
+    <child
+      link="link_right_outer_heel_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_calf_y">
+    <inertial>
+      <origin
+        xyz="-1.62676050408095E-09 -2.32955549295255E-09 4.96156449258933E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0489242727171444" />
+      <inertia
+        ixx="3.14927991133251E-06"
+        ixy="6.13437385791298E-15"
+        ixz="9.54771352607012E-14"
+        iyy="3.14927983140683E-06"
+        iyz="5.68294585908095E-13"
+        izz="3.9549565359015E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_calf_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_calf_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_calf_y"
+    type="revolute">
+    <origin
+      xyz="-0.04479 0.02575 -0.153"
+      rpy="0 0.0024657 0.7854" />
+    <parent
+      link="link_right_shin" />
+    <child
+      link="link_right_inner_calf_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_calf_x">
+    <inertial>
+      <origin
+        xyz="4.11996227969724E-06 0.00244064369018376 -0.0934498108455541"
+        rpy="0 0 0" />
+      <mass
+        value="0.848975417558712" />
+      <inertia
+        ixx="0.000753249244217637"
+        ixy="-9.93046714373982E-07"
+        ixz="-2.71469403434614E-08"
+        iyy="0.000760167985034967"
+        iyz="1.36361394999055E-05"
+        izz="0.000334278163683215" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_calf_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_calf_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_calf_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_inner_calf_y" />
+    <child
+      link="link_right_inner_calf_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_calf_z">
+    <inertial>
+      <origin
+        xyz="0.00232697555809173 8.15125628855773E-07 0.118097108382965"
+        rpy="0 0 0" />
+      <mass
+        value="0.313319725287053" />
+      <inertia
+        ixx="0.000614525634724129"
+        ixy="1.96240103388758E-08"
+        ixz="-1.19024249841336E-05"
+        iyy="0.000616005709509402"
+        iyz="-9.29748557620686E-10"
+        izz="1.04896785005994E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_calf_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_calf_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_calf_z"
+    type="prismatic">
+    <origin
+      xyz="-3.0548E-05 0.0072363 -0.26872"
+      rpy="0.017975 -0.0017435 -0.7854" />
+    <parent
+      link="link_right_inner_calf_x" />
+    <child
+      link="link_right_inner_calf_z" />
+    <axis
+      xyz="0.01969 0 0.99981" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_heel_y">
+    <inertial>
+      <origin
+        xyz="-3.59908918640128E-09 0.000146255806986129 -0.0106586926960788"
+        rpy="0 0 0" />
+      <mass
+        value="0.106784924676641" />
+      <inertia
+        ixx="1.67979927314907E-05"
+        ixy="-2.08497988660713E-11"
+        ixz="5.381215709197E-11"
+        iyy="1.57814946067939E-05"
+        iyz="1.43012799905408E-12"
+        izz="1.0154178888108E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_heel_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_heel_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_heel_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_inner_calf_z" />
+    <child
+      link="link_right_inner_heel_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_x_actuator">
+    <inertial>
+      <origin
+        xyz="0.0249779617805827 0.00114871894775685 0.00188920918908891"
+        rpy="0 0 0" />
+      <mass
+        value="2.27538644549121" />
+      <inertia
+        ixx="0.00319951989754665"
+        ixy="-5.64484408081079E-06"
+        ixz="-6.55179154975476E-06"
+        iyy="0.00193595109158731"
+        iyz="-6.58963815609264E-05"
+        izz="0.00187466035512707" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_x_actuator.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_x_actuator.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_x_actuator"
+    type="revolute">
+    <origin
+      xyz="-0.02 0.0035 -0.175"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_x" />
+    <child
+      link="link_right_hip_x_actuator" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_y_pin">
+    <inertial>
+      <origin
+        xyz="-0.00800319004962649 5.29196964027534E-11 5.26763910269068E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0232328938385498" />
+      <inertia
+        ixx="2.47126214295172E-07"
+        ixy="2.85288822332854E-14"
+        ixz="2.22744024683969E-14"
+        iyy="6.75963753878896E-06"
+        iyz="-9.62624586189348E-14"
+        izz="6.75963701809008E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_y_pin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_y_pin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_y_pin"
+    type="revolute">
+    <origin
+      xyz="-0.02 -0.024 -0.092"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_y" />
+    <child
+      link="link_right_hip_y_pin" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_y_bar">
+    <inertial>
+      <origin
+        xyz="-1.33718481593569E-05 -0.0290316461382469 0.0130522638488193"
+        rpy="0 0 0" />
+      <mass
+        value="0.244949497057165" />
+      <inertia
+        ixx="0.000158059174745626"
+        ixy="5.84607887307653E-08"
+        ixz="1.73358398074553E-07"
+        iyy="4.79311030205859E-05"
+        iyz="4.2709468163759E-05"
+        izz="0.000160178578127424" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_y_bar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_hip_y_bar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_y_bar"
+    type="revolute">
+    <origin
+      xyz="0 0.06633 -0.022368"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_y_pin" />
+    <child
+      link="link_right_hip_y_bar" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_torso_z">
+    <inertial>
+      <origin
+        xyz="0.0160563183653513 -3.86679957346741E-05 -0.0506908665923585"
+        rpy="0 0 0" />
+      <mass
+        value="2.28508676482802" />
+      <inertia
+        ixx="0.00263924540378316"
+        ixy="-5.48144524638854E-10"
+        ixz="-0.00014595103199152"
+        iyy="0.00208764642296456"
+        iyz="1.37362077771275E-09"
+        izz="0.00228250953243651" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_torso_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_torso_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0.25"
+      rpy="0 0 0" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="link_torso_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_torso_x">
+    <inertial>
+      <origin
+        xyz="-0.00232675468755813 -0.0141485878461202 0.0505903110018794"
+        rpy="0 0 0" />
+      <mass
+        value="2.52132262049252" />
+      <inertia
+        ixx="0.00267118211009182"
+        ixy="2.96741673421245E-05"
+        ixz="-0.000139211248504306"
+        iyy="0.00271417953683683"
+        iyz="0.000148811660528114"
+        izz="0.00165059403057496" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_torso_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_torso_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_torso_z" />
+    <child
+      link="link_torso_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.526"
+      upper="0.526"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_torso_y">
+    <inertial>
+      <origin
+        xyz="-0.0423845920391599 0.00086971902380276 0.0856208724174743"
+        rpy="0 0 0" />
+      <mass
+        value="42.81761141259" />
+      <inertia
+        ixx="0.388407034626597"
+        ixy="-0.000129378866653881"
+        ixz="-0.0139186762764279"
+        iyy="0.345232056639775"
+        iyz="0.000191599674994097"
+        izz="0.253510726839241" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_torso_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_torso_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0.114"
+      rpy="0 0 0" />
+    <parent
+      link="link_torso_x" />
+    <child
+      link="link_torso_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.5812"
+      upper="0.5812"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shoulder_y">
+    <inertial>
+      <origin
+        xyz="0.0165185669671888 -0.0406850147564862 0.00337573212642872"
+        rpy="0 0 0" />
+      <mass
+        value="4.21695252193871" />
+      <inertia
+        ixx="0.00840022835979153"
+        ixy="-0.00100350408450253"
+        ixz="0.000281538031437165"
+        iyy="0.007525728616232"
+        iyz="7.12953954005121E-05"
+        izz="0.00752329564279037" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_shoulder_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_shoulder_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_y"
+    type="revolute">
+    <origin
+      xyz="0 0.20737 0.14908"
+      rpy="0.20944 0 0" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="link_left_shoulder_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shoulder_x">
+    <inertial>
+      <origin
+        xyz="-0.00969111924226931 -2.74726696175565E-05 -0.0643536022323943"
+        rpy="0 0 0" />
+      <mass
+        value="4.17993759311418" />
+      <inertia
+        ixx="0.0121283082754003"
+        ixy="-1.89109719619068E-05"
+        ixz="0.00226563652749388"
+        iyy="0.0120018850022544"
+        iyz="8.70896904982406E-06"
+        izz="0.00475488519526691" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_shoulder_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_shoulder_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_shoulder_y" />
+    <child
+      link="link_left_shoulder_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.6652"
+      upper="0.526"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shoulder_z">
+    <inertial>
+      <origin
+        xyz="-0.000281715973092858 0.00936420109902836 -0.246565660755882"
+        rpy="0 0 0" />
+      <mass
+        value="2.73977375792925" />
+      <inertia
+        ixx="0.00452470384346088"
+        ixy="-1.68094938948074E-05"
+        ixz="2.16398155613215E-05"
+        iyy="0.00439987019450332"
+        iyz="0.00103534487848403"
+        izz="0.00287952088993352" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_shoulder_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_shoulder_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_shoulder_x" />
+    <child
+      link="link_left_shoulder_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_lower_arm">
+    <inertial>
+      <origin
+        xyz="-8.30212525926522E-06 -0.0174890775031508 -0.0378099480962806"
+        rpy="0 0 0" />
+      <mass
+        value="2.07642060317785" />
+      <inertia
+        ixx="0.00339868369124097"
+        ixy="5.90539308180764E-06"
+        ixz="-5.37563431005222E-06"
+        iyy="0.0034389170174315"
+        iyz="0.000836609981823735"
+        izz="0.00188350251082257" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_lower_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_lower_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_elbow"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.2915"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_shoulder_z" />
+    <child
+      link="link_left_lower_arm" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.7453"
+      upper="1.7453"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_wrist_z">
+    <inertial>
+      <origin
+        xyz="0.000594939678240765 5.02924403594784E-06 -0.170375799341821"
+        rpy="0 0 0" />
+      <mass
+        value="1.40254830522601" />
+      <inertia
+        ixx="0.0025088216112728"
+        ixy="2.0823137411525E-07"
+        ixz="0.000156895756397324"
+        iyy="0.00254709103025921"
+        iyz="2.62269796428666E-07"
+        izz="0.00113406306518032" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_wrist_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_wrist_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wrist_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_lower_arm" />
+    <child
+      link="link_left_wrist_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_wrist_y">
+    <inertial>
+      <origin
+        xyz="0.000126746060347353 -3.04495708684516E-05 -0.00145364718658891"
+        rpy="0 0 0" />
+      <mass
+        value="0.00990074232642698" />
+      <inertia
+        ixx="2.91837043993428E-07"
+        ixy="-3.56673637207615E-14"
+        ixz="6.8259632020449E-09"
+        iyy="2.13449085760094E-07"
+        iyz="8.80416786117782E-15"
+        izz="2.14944747122878E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_wrist_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_wrist_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wrist_y"
+    type="revolute">
+    <origin
+      xyz="0.019 0 -0.2669"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_wrist_z" />
+    <child
+      link="link_left_wrist_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.0472"
+      upper="0.7854"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_wrist_x">
+    <inertial>
+      <origin
+        xyz="-0.0136530426775288 -0.00251251472602931 -0.08679242081092"
+        rpy="0 0 0" />
+      <mass
+        value="0.729502773771916" />
+      <inertia
+        ixx="0.00062737770309608"
+        ixy="4.45526400815398E-06"
+        ixz="4.68433734670911E-05"
+        iyy="0.000489606921976943"
+        iyz="-3.70507694071204E-06"
+        izz="0.000365655371222419" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_wrist_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_wrist_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wrist_x"
+    type="revolute">
+    <origin
+      xyz="0.00096099 0 -0.010958"
+      rpy="0 -0.087474 0" />
+    <parent
+      link="link_left_wrist_y" />
+    <child
+      link="link_left_wrist_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.9582"
+      upper="0.9582"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_wrist_p_y">
+    <inertial>
+      <origin
+        xyz="2.96984659087229E-15 3.94129173741931E-15 -2.74780198594726E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204760589692671" />
+      <inertia
+        ixx="7.65117694614668E-08"
+        ixy="-1.35450825305558E-23"
+        ixz="4.13590306276514E-24"
+        iyy="4.09340995097996E-09"
+        iyz="3.92393803079843E-23"
+        izz="7.65117694614668E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_wrist_p_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_wrist_p_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_wrist_p_y"
+    type="revolute">
+    <origin
+      xyz="-0.023866 0.01243 0"
+      rpy="0 -0.068652 -0.48018" />
+    <parent
+      link="link_left_wrist_x" />
+    <child
+      link="link_left_outer_wrist_p_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_wrist_p_y">
+    <inertial>
+      <origin
+        xyz="3.70536934468646E-15 -2.5995872121598E-13 -3.58046925441613E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204760589692672" />
+      <inertia
+        ixx="7.65117694614674E-08"
+        ixy="8.05467121473511E-23"
+        ixz="-9.92616735063633E-24"
+        iyy="4.09340995097998E-09"
+        iyz="1.36924240771668E-21"
+        izz="7.65117694614674E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_wrist_p_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_wrist_p_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_wrist_p_y"
+    type="revolute">
+    <origin
+      xyz="-0.023866 -0.01243 0"
+      rpy="0 -0.068652 0.48018" />
+    <parent
+      link="link_left_wrist_x" />
+    <child
+      link="link_left_inner_wrist_p_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_lower_arm_x">
+    <inertial>
+      <origin
+        xyz="3.80291631518759E-11 -4.85470219580009E-10 3.9594379080965E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0115130471617442" />
+      <inertia
+        ixx="2.98245083261452E-07"
+        ixy="-2.75580998668687E-09"
+        ixz="-8.1452223559392E-16"
+        iyy="5.99152946295685E-07"
+        iyz="-1.83498196068782E-13"
+        izz="6.7610502910874E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_lower_arm_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_lower_arm_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_lower_arm_x"
+    type="revolute">
+    <origin
+      xyz="-0.0175 0.025 -0.1579"
+      rpy="-0.10949 0 0" />
+    <parent
+      link="link_left_wrist_z" />
+    <child
+      link="link_left_outer_lower_arm_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_lower_arm_y">
+    <inertial>
+      <origin
+        xyz="0.00289334343425202 3.46950125390544E-06 -0.0263118663273109"
+        rpy="0 0 0" />
+      <mass
+        value="0.155342422785749" />
+      <inertia
+        ixx="4.0420083823823E-05"
+        ixy="1.32178692352822E-07"
+        ixz="2.8855741304341E-06"
+        iyy="4.08815847434881E-05"
+        iyz="1.43981991519246E-08"
+        izz="1.54489590152944E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_lower_arm_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_lower_arm_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_lower_arm_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_outer_lower_arm_x" />
+    <child
+      link="link_left_outer_lower_arm_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_lower_arm_z">
+    <inertial>
+      <origin
+        xyz="1.36374053133492E-07 8.6205914628934E-08 0.0459598741962007"
+        rpy="0 0 0" />
+      <mass
+        value="0.0328078893973029" />
+      <inertia
+        ixx="1.27149242824524E-05"
+        ixy="6.42949003249524E-11"
+        ixz="6.13260488177361E-10"
+        iyy="1.29009463771292E-05"
+        iyz="-1.82309736791046E-10"
+        izz="4.43867579048244E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_lower_arm_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_lower_arm_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_lower_arm_z"
+    type="prismatic">
+    <origin
+      xyz="0.01206 0 -0.11184"
+      rpy="0.05107 -0.094547 -0.49625" />
+    <parent
+      link="link_left_outer_lower_arm_y" />
+    <child
+      link="link_left_outer_lower_arm_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_outer_wrist_p_x">
+    <inertial>
+      <origin
+        xyz="3.0449175877495E-05 0.000126075137253823 -0.00145370610693069"
+        rpy="0 0 0" />
+      <mass
+        value="0.00990074283519902" />
+      <inertia
+        ixx="2.13449089806697E-07"
+        ixy="4.37343646120934E-14"
+        ixz="-3.18980371717866E-14"
+        iyy="2.91843343829934E-07"
+        iyz="6.79047822912302E-09"
+        izz="2.14938477196737E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_wrist_p_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_outer_wrist_p_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_outer_wrist_p_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_outer_lower_arm_z" />
+    <child
+      link="link_left_outer_wrist_p_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_lower_arm_x">
+    <inertial>
+      <origin
+        xyz="3.46644032922505E-11 -4.42903880237822E-10 3.96286142095859E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0115130473299514" />
+      <inertia
+        ixx="2.98245124116116E-07"
+        ixy="-2.7558093680991E-09"
+        ixz="-8.45623932985225E-16"
+        iyy="5.99153010020532E-07"
+        iyz="-1.84476500017945E-13"
+        izz="6.76105119033875E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_lower_arm_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_lower_arm_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_lower_arm_x"
+    type="revolute">
+    <origin
+      xyz="-0.0175 -0.025 -0.1579"
+      rpy="0.10949 0 0" />
+    <parent
+      link="link_left_wrist_z" />
+    <child
+      link="link_left_inner_lower_arm_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_lower_arm_y">
+    <inertial>
+      <origin
+        xyz="0.00289334174171602 3.47347838280943E-06 -0.0263118729082011"
+        rpy="0 0 0" />
+      <mass
+        value="0.155342385718136" />
+      <inertia
+        ixx="4.04200797714176E-05"
+        ixy="1.32179714690811E-07"
+        ixz="2.88557770136129E-06"
+        iyy="4.08815804524398E-05"
+        iyz="1.43893309376611E-08"
+        izz="1.54489596195874E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_lower_arm_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_lower_arm_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_lower_arm_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_inner_lower_arm_x" />
+    <child
+      link="link_left_inner_lower_arm_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_lower_arm_z">
+    <inertial>
+      <origin
+        xyz="1.85937344354681E-07 4.49878775066193E-08 0.0459598548443882"
+        rpy="0 0 0" />
+      <mass
+        value="0.0328075038859094" />
+      <inertia
+        ixx="1.27148424909489E-05"
+        ixy="5.25688932365846E-11"
+        ixz="6.02682374947823E-10"
+        iyy="1.29008592089261E-05"
+        iyz="-1.83718011604887E-10"
+        izz="4.43863490604657E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_lower_arm_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_lower_arm_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_lower_arm_z"
+    type="prismatic">
+    <origin
+      xyz="0.01206 0 -0.11184"
+      rpy="-0.05107 -0.094547 0.49625" />
+    <parent
+      link="link_left_inner_lower_arm_y" />
+    <child
+      link="link_left_inner_lower_arm_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_inner_wrist_p_x">
+    <inertial>
+      <origin
+        xyz="3.04492792739808E-05 -0.00012753615984995 -0.00145357822339098"
+        rpy="0 0 0" />
+      <mass
+        value="0.00990074254733733" />
+      <inertia
+        ixx="2.13449086720331E-07"
+        ixy="3.52485989037638E-14"
+        ixz="-2.83927366337016E-14"
+        iyy="2.9185369729626E-07"
+        iyz="-6.73153770411135E-09"
+        izz="2.14928106917519E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_wrist_p_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_inner_wrist_p_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_inner_wrist_p_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_inner_lower_arm_z" />
+    <child
+      link="link_left_inner_wrist_p_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shoulder_y">
+    <inertial>
+      <origin
+        xyz="0.0165179081828032 0.040685943543943 0.00337573898225552"
+        rpy="0 0 0" />
+      <mass
+        value="4.21692994655018" />
+      <inertia
+        ixx="0.00840012753590704"
+        ixy="0.00100357254500633"
+        ixz="0.000281446481303119"
+        iyy="0.00752580386166597"
+        iyz="-7.14114025962606E-05"
+        izz="0.00752328094847193" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_shoulder_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_shoulder_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.20737 0.14908"
+      rpy="-0.20944 0 0" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="link_right_shoulder_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shoulder_x">
+    <inertial>
+      <origin
+        xyz="-0.00968936168377659 4.27273045986998E-05 -0.0643545446256407"
+        rpy="0 0 0" />
+      <mass
+        value="4.17995066665826" />
+      <inertia
+        ixx="0.0121285166078532"
+        ixy="1.92810866711198E-05"
+        ixz="0.00226609479620087"
+        iyy="0.0120024216266926"
+        iyz="-7.89959421928631E-06"
+        izz="0.00475520095790751" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_shoulder_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_shoulder_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_shoulder_y" />
+    <child
+      link="link_right_shoulder_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.526"
+      upper="3.6652"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shoulder_z">
+    <inertial>
+      <origin
+        xyz="-0.000286913034574824 -0.00936427183211369 -0.24656423791994"
+        rpy="0 0 0" />
+      <mass
+        value="2.73984206014482" />
+      <inertia
+        ixx="0.00452473409225535"
+        ixy="1.69073222336115E-05"
+        ixz="2.16123497441957E-05"
+        iyy="0.00439981558012365"
+        iyz="-0.00103532257019683"
+        izz="0.00287956862316531" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_shoulder_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_shoulder_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_shoulder_x" />
+    <child
+      link="link_right_shoulder_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_lower_arm">
+    <inertial>
+      <origin
+        xyz="-0.00013590688819372 0.017488566856751 -0.0378082716453934"
+        rpy="0 0 0" />
+      <mass
+        value="2.0763100871149" />
+      <inertia
+        ixx="0.00339860874076082"
+        ixy="-6.30251373361696E-06"
+        ixz="-6.19873583996569E-06"
+        iyy="0.00343886195604275"
+        iyz="-0.000836617779976311"
+        izz="0.00188348469734961" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_lower_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_lower_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_elbow"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.2915"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_shoulder_z" />
+    <child
+      link="link_right_lower_arm" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.7453"
+      upper="1.7453"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_wrist_z">
+    <inertial>
+      <origin
+        xyz="0.00056004118088272 -2.43685001222183E-06 -0.170582098526718"
+        rpy="0 0 0" />
+      <mass
+        value="1.40158555589445" />
+      <inertia
+        ixx="0.00250411397941441"
+        ixy="-3.2895438507606E-07"
+        ixz="0.000156806358885978"
+        iyy="0.00254354838996052"
+        iyz="-1.58366091010767E-07"
+        izz="0.00113319926087173" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_wrist_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_wrist_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wrist_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_lower_arm" />
+    <child
+      link="link_right_wrist_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_wrist_y">
+    <inertial>
+      <origin
+        xyz="0.000126746388087649 -3.04489850745937E-05 -0.00145364761139122"
+        rpy="0 0 0" />
+      <mass
+        value="0.00990074352864452" />
+      <inertia
+        ixx="2.91837059059916E-07"
+        ixy="-5.05244607328104E-14"
+        ixz="6.82596289825787E-09"
+        iyy="2.13449105286169E-07"
+        iyz="2.69754798473868E-14"
+        izz="2.14944777951785E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_wrist_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_wrist_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wrist_y"
+    type="revolute">
+    <origin
+      xyz="0.019 0 -0.2669"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_wrist_z" />
+    <child
+      link="link_right_wrist_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.0472"
+      upper="0.7854"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_wrist_x">
+    <inertial>
+      <origin
+        xyz="-0.0218382190616411 0.00461587617580517 -0.0896524641761287"
+        rpy="0 0 0" />
+      <mass
+        value="0.20686279814228" />
+      <inertia
+        ixx="4.68415833250103E-05"
+        ixy="3.42218685422246E-07"
+        ixz="-3.82073105031038E-06"
+        iyy="4.74841631474122E-05"
+        iyz="5.8410589012194E-08"
+        izz="2.79961934999012E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_wrist_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_wrist_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wrist_x"
+    type="revolute">
+    <origin
+      xyz="0.00096099 0 -0.010958"
+      rpy="0 -0.087474 0" />
+    <parent
+      link="link_right_wrist_y" />
+    <child
+      link="link_right_wrist_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.9582"
+      upper="0.9582"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_wrist_p_y">
+    <inertial>
+      <origin
+        xyz="5.60523849557626E-14 1.83741910575463E-14 -1.765254609154E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204760589692672" />
+      <inertia
+        ixx="7.6511769461467E-08"
+        ixy="3.97801496334408E-21"
+        ixz="4.96308367531817E-24"
+        iyy="4.09340995097997E-09"
+        iyz="8.64041848599922E-22"
+        izz="7.6511769461467E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_wrist_p_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_wrist_p_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_wrist_p_y"
+    type="revolute">
+    <origin
+      xyz="-0.023866 0.01243 0"
+      rpy="0 -0.068652 -0.48018" />
+    <parent
+      link="link_right_wrist_x" />
+    <child
+      link="link_right_inner_wrist_p_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_wrist_p_y">
+    <inertial>
+      <origin
+        xyz="4.7573056605188E-14 -3.22519788653608E-14 -1.99840144432528E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204760589692671" />
+      <inertia
+        ixx="7.65117694614671E-08"
+        ixy="4.08689261147137E-21"
+        ixz="-1.15805285757424E-23"
+        iyy="4.09340995097995E-09"
+        iyz="1.78942430949948E-21"
+        izz="7.65117694614671E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_wrist_p_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_wrist_p_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_wrist_p_y"
+    type="revolute">
+    <origin
+      xyz="-0.023866 -0.01243 0"
+      rpy="0 -0.068652 0.48018" />
+    <parent
+      link="link_right_wrist_x" />
+    <child
+      link="link_right_outer_wrist_p_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_lower_arm_x">
+    <inertial>
+      <origin
+        xyz="-3.46311382348752E-11 4.4290110468026E-10 3.96285964876508E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0115130473299513" />
+      <inertia
+        ixx="2.98245124116114E-07"
+        ixy="-2.75580936810185E-09"
+        ixz="8.45628191609388E-16"
+        iyy="5.99153010020532E-07"
+        iyz="-2.05886427634182E-13"
+        izz="6.76105119033873E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_lower_arm_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_lower_arm_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_lower_arm_x"
+    type="revolute">
+    <origin
+      xyz="-0.0175 0.025 -0.1579"
+      rpy="-0.10949 0 0" />
+    <parent
+      link="link_right_wrist_z" />
+    <child
+      link="link_right_inner_lower_arm_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_lower_arm_y">
+    <inertial>
+      <origin
+        xyz="0.00289332728320129 3.60267128407532E-06 -0.0263118618369616"
+        rpy="0 0 0" />
+      <mass
+        value="0.155342443921686" />
+      <inertia
+        ixx="4.04200851507992E-05"
+        ixy="1.32214841460542E-07"
+        ixz="2.88558936362873E-06"
+        iyy="4.08815811013635E-05"
+        iyz="1.4230127697958E-08"
+        izz="1.54489646903739E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_lower_arm_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_lower_arm_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_lower_arm_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_inner_lower_arm_x" />
+    <child
+      link="link_right_inner_lower_arm_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_lower_arm_z">
+    <inertial>
+      <origin
+        xyz="1.8264987414196E-07 5.93365177270488E-08 0.0459598629818907"
+        rpy="0 0 0" />
+      <mass
+        value="0.0328074548406087" />
+      <inertia
+        ixx="1.27148267507972E-05"
+        ixy="5.16590429482629E-11"
+        ixz="6.04853106222316E-10"
+        iyy="1.29008398148726E-05"
+        iyz="-1.87506556598591E-10"
+        izz="4.43863048137939E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_lower_arm_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_lower_arm_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_lower_arm_z"
+    type="prismatic">
+    <origin
+      xyz="0.01206 0 -0.11184"
+      rpy="0.05107 -0.094547 -0.49625" />
+    <parent
+      link="link_right_inner_lower_arm_y" />
+    <child
+      link="link_right_inner_lower_arm_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_inner_wrist_p_x">
+    <inertial>
+      <origin
+        xyz="3.04495393975146E-05 0.000126074747908655 -0.00145370614837453"
+        rpy="0 0 0" />
+      <mass
+        value="0.00990074354018018" />
+      <inertia
+        ixx="2.13449098649846E-07"
+        ixy="5.15744474147101E-14"
+        ixz="-2.30242706693723E-14"
+        iyy="2.91843349906646E-07"
+        iyz="6.7904882082774E-09"
+        izz="2.1493849891666E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_wrist_p_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_inner_wrist_p_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_inner_wrist_p_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_inner_lower_arm_z" />
+    <child
+      link="link_right_inner_wrist_p_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_lower_arm_x">
+    <inertial>
+      <origin
+        xyz="-3.79958529916902E-11 4.85463780286466E-10 3.95943629480366E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0115130471617441" />
+      <inertia
+        ixx="2.98245083261449E-07"
+        ixy="-2.75580998668433E-09"
+        ixz="8.14521837676214E-16"
+        iyy="5.99152946295675E-07"
+        iyz="-2.06864895990798E-13"
+        izz="6.76105029108728E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_lower_arm_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_lower_arm_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_lower_arm_x"
+    type="revolute">
+    <origin
+      xyz="-0.0175 -0.025 -0.1579"
+      rpy="0.10949 0 0" />
+    <parent
+      link="link_right_wrist_z" />
+    <child
+      link="link_right_outer_lower_arm_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_lower_arm_y">
+    <inertial>
+      <origin
+        xyz="0.00289332628575487 3.60722465186925E-06 -0.0263118563129777"
+        rpy="0 0 0" />
+      <mass
+        value="0.155342476002531" />
+      <inertia
+        ixx="4.04200879202292E-05"
+        ixy="1.32216241806573E-07"
+        ixz="2.88558956286349E-06"
+        iyy="4.08815866205277E-05"
+        iyz="1.42196461206478E-08"
+        izz="1.5448964266436E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_lower_arm_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_lower_arm_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_lower_arm_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_outer_lower_arm_x" />
+    <child
+      link="link_right_outer_lower_arm_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_lower_arm_z">
+    <inertial>
+      <origin
+        xyz="2.80404645613963E-07 7.69794314958716E-08 0.0459602192743821"
+        rpy="0 0 0" />
+      <mass
+        value="0.0328091408656871" />
+      <inertia
+        ixx="1.27152010015626E-05"
+        ixy="-1.23928157719849E-11"
+        ixz="6.13907680906104E-10"
+        iyy="1.29014217963509E-05"
+        iyz="-1.89393631409829E-10"
+        izz="4.43880293692384E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_lower_arm_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_lower_arm_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_lower_arm_z"
+    type="prismatic">
+    <origin
+      xyz="0.01206 0 -0.11184"
+      rpy="-0.05107 -0.094547 0.49625" />
+    <parent
+      link="link_right_outer_lower_arm_y" />
+    <child
+      link="link_right_outer_lower_arm_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_outer_wrist_p_x">
+    <inertial>
+      <origin
+        xyz="3.04491733695011E-05 -0.000127536518045979 -0.00145357864302942"
+        rpy="0 0 0" />
+      <mass
+        value="0.00990074298261053" />
+      <inertia
+        ixx="2.13449094325332E-07"
+        ixy="3.92398180122597E-14"
+        ixz="-4.25095515905037E-14"
+        iyy="2.91853710219208E-07"
+        iyz="-6.73152222784813E-09"
+        izz="2.14928117168884E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_wrist_p_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_outer_wrist_p_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_outer_wrist_p_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_outer_lower_arm_z" />
+    <child
+      link="link_right_outer_wrist_p_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_head_z">
+    <inertial>
+      <origin
+        xyz="8.01147169490364E-05 -2.59907372067407E-08 0.00892508110987933"
+        rpy="0 0 0" />
+      <mass
+        value="0.536685720839001" />
+      <inertia
+        ixx="0.000163295304329287"
+        ixy="2.35910215783858E-10"
+        ixz="4.14119749739464E-07"
+        iyy="0.000163183558464049"
+        iyz="-8.05451391371282E-10"
+        izz="0.000294532295433358" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_head_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_head_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_z"
+    type="continuous">
+    <origin
+      xyz="0 0 0.2535"
+      rpy="0 0 0" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="link_head_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_head_x">
+    <inertial>
+      <origin
+        xyz="7.3343040568434E-07 3.04493490111156E-05 0.00954083761738389"
+        rpy="0 0 0" />
+      <mass
+        value="0.00990074271673379" />
+      <inertia
+        ixx="2.92438302275675E-07"
+        ixy="-3.87640497528908E-14"
+        ixz="-2.99270106640079E-11"
+        iyy="2.13449092601192E-07"
+        iyz="-2.66585034961479E-14"
+        izz="2.14343509770296E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_head_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_head_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_x"
+    type="revolute">
+    <origin
+      xyz="-0.013 0 0.03"
+      rpy="0 0 0" />
+    <parent
+      link="link_head_z" />
+    <child
+      link="link_head_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.9582"
+      upper="0.9582"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_head_y">
+    <inertial>
+      <origin
+        xyz="0.0463849886562862 -1.57789005279433E-05 0.136782453618184"
+        rpy="0 0 0" />
+      <mass
+        value="4.67809081879168" />
+      <inertia
+        ixx="0.0126684429073912"
+        ixy="2.36780771702505E-06"
+        ixz="0.00263398770986991"
+        iyy="0.0118722351189948"
+        iyz="-8.92306266617729E-06"
+        izz="0.00985670119141448" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_head_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_head_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0.011"
+      rpy="0 0 0" />
+    <parent
+      link="link_head_x" />
+    <child
+      link="link_head_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.7854"
+      upper="1.0472"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_neck_x">
+    <inertial>
+      <origin
+        xyz="-3.80767639640567E-11 4.86272855315661E-10 3.9605905000073E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0115130472174793" />
+      <inertia
+        ixx="2.98245096859779E-07"
+        ixy="-2.75580978643879E-09"
+        ixz="8.53137478981768E-16"
+        iyy="5.99152967469594E-07"
+        iyz="-2.06900951157352E-13"
+        izz="6.76105058907903E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_neck_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_neck_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_neck_x"
+    type="revolute">
+    <origin
+      xyz="0.0365 0.025 0.109"
+      rpy="-0.10824 0 0" />
+    <parent
+      link="link_head_y" />
+    <child
+      link="link_left_neck_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_neck_y">
+    <inertial>
+      <origin
+        xyz="-0.00264730493129329 3.59168229486367E-06 -0.0263377412452996"
+        rpy="0 0 0" />
+      <mass
+        value="0.155342492656942" />
+      <inertia
+        ixx="4.05130776580994E-05"
+        ixy="1.32273060063431E-07"
+        ixz="-2.44865070998256E-06"
+        iyy="4.08815901589527E-05"
+        iyz="-1.35942523973451E-08"
+        izz="1.53559780262304E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_neck_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_neck_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_neck_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_neck_x" />
+    <child
+      link="link_left_neck_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_neck_z">
+    <inertial>
+      <origin
+        xyz="-1.64507642078093E-07 -3.71682755996583E-08 0.0459598757812059"
+        rpy="0 0 0" />
+      <mass
+        value="0.0328075752764176" />
+      <inertia
+        ixx="1.27148587345602E-05"
+        ixy="5.38998223135208E-11"
+        ixz="-6.01754177755845E-10"
+        iyy="1.29008777693532E-05"
+        iyz="1.86915194153386E-10"
+        izz="4.43864201631559E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_neck_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_neck_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_neck_z"
+    type="prismatic">
+    <origin
+      xyz="-0.011264 0 -0.10975"
+      rpy="0.048185 0.090249 0.49129" />
+    <parent
+      link="link_left_neck_y" />
+    <child
+      link="link_left_neck_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_collar_x">
+    <inertial>
+      <origin
+        xyz="-3.04492739806525E-05 7.09906726404051E-05 -0.00145743460301528"
+        rpy="0 0 0" />
+      <mass
+        value="0.00990074271177865" />
+      <inertia
+        ixx="2.13449086875413E-07"
+        ixy="3.82842551702251E-14"
+        ixz="2.85907314884035E-14"
+        iyy="2.92260123005284E-07"
+        iyz="3.72609679476532E-09"
+        izz="2.14521684731789E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_collar_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_collar_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_collar_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_neck_z" />
+    <child
+      link="link_left_collar_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_neck_x">
+    <inertial>
+      <origin
+        xyz="3.80772427477361E-11 -4.8627393778311E-10 3.9605905000073E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0115130472174792" />
+      <inertia
+        ixx="2.98245096859776E-07"
+        ixy="-2.75580978644322E-09"
+        ixz="-8.53135765532891E-16"
+        iyy="5.99152967469584E-07"
+        iyz="-1.8346214164923E-13"
+        izz="6.76105058907892E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_neck_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_neck_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_neck_x"
+    type="revolute">
+    <origin
+      xyz="0.0365 -0.025 0.109"
+      rpy="0.10824 0 0" />
+    <parent
+      link="link_head_y" />
+    <child
+      link="link_right_neck_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_neck_y">
+    <inertial>
+      <origin
+        xyz="-0.00264729311032456 3.45182978361835E-06 -0.026337744683942"
+        rpy="0 0 0" />
+      <mass
+        value="0.15534244796308" />
+      <inertia
+        ixx="4.05130727979591E-05"
+        ixy="1.32290458918439E-07"
+        ixz="-2.44866567683975E-06"
+        iyy="4.0881575621519E-05"
+        iyz="-1.34138249522089E-08"
+        izz="1.53559754105333E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_neck_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_neck_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_neck_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_neck_x" />
+    <child
+      link="link_right_neck_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_neck_z">
+    <inertial>
+      <origin
+        xyz="-1.77134218772024E-07 -3.25983080980141E-07 0.0459598913839403"
+        rpy="0 0 0" />
+      <mass
+        value="0.0328084574445541" />
+      <inertia
+        ixx="1.27150719950964E-05"
+        ixy="4.13823256210406E-11"
+        ixz="6.15740560971597E-10"
+        iyy="1.29011984559316E-05"
+        iyz="-1.8338047466247E-10"
+        izz="4.43874009658728E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_neck_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_neck_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_neck_z"
+    type="prismatic">
+    <origin
+      xyz="-0.011264 0 -0.10975"
+      rpy="-0.048185 0.090249 -0.49129" />
+    <parent
+      link="link_right_neck_y" />
+    <child
+      link="link_right_neck_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_collar_x">
+    <inertial>
+      <origin
+        xyz="3.04494022215496E-05 -7.09906462862432E-05 -0.00145743431392709"
+        rpy="0 0 0" />
+      <mass
+        value="0.00990074242256961" />
+      <inertia
+        ixx="2.13449088820112E-07"
+        ixy="3.53685104199611E-14"
+        ixz="-2.15295881349419E-14"
+        iyy="2.92260116772343E-07"
+        iyz="-3.72609852406834E-09"
+        izz="2.1452167774182E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_collar_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_collar_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_collar_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_neck_z" />
+    <child
+      link="link_right_collar_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_head_y_depth_cam_left">
+    <inertial>
+      <origin
+        xyz="9.08176355021717E-08 7.72507374242615E-05 -0.0103299733025929"
+        rpy="0 0 0" />
+      <mass
+        value="0.00526150098797048" />
+      <inertia
+        ixx="4.57441530662082E-07"
+        ixy="-4.5979502157614E-12"
+        ixz="2.54906530922901E-12"
+        iyy="5.13801378286739E-07"
+        iyz="-5.10757382487585E-09"
+        izz="2.61766354659672E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_head_y_depth_cam_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_head_y_depth_cam_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_y_depth_cam_left"
+    type="revolute">
+    <origin
+      xyz="0.08011 0.027 0.065199"
+      rpy="1.4661 0 -1.5708" />
+    <parent
+      link="link_head_y" />
+    <child
+      link="sensor_head_y_depth_cam_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_head_y_depth_cam_right">
+    <inertial>
+      <origin
+        xyz="9.0817626034051E-08 7.72507374331433E-05 -0.0103299733025697"
+        rpy="0 0 0" />
+      <mass
+        value="0.00526150098797055" />
+      <inertia
+        ixx="4.57441530662096E-07"
+        ixy="-4.59795021661069E-12"
+        ixz="2.54906530611356E-12"
+        iyy="5.13801378286751E-07"
+        iyz="-5.10757382487023E-09"
+        izz="2.61766354659678E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_head_y_depth_cam_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_head_y_depth_cam_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_y_depth_cam_right"
+    type="revolute">
+    <origin
+      xyz="0.08011 -0.027 0.065199"
+      rpy="1.4661 0 -1.5708" />
+    <parent
+      link="link_head_y" />
+    <child
+      link="sensor_head_y_depth_cam_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_collar_y">
+    <inertial>
+      <origin
+        xyz="5.17502707353401E-14 6.93592015418854E-11 6.55031584528842E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204760589692667" />
+      <inertia
+        ixx="7.65117694614666E-08"
+        ixy="-1.38552752602632E-22"
+        ixz="-3.63959469523332E-23"
+        iyy="4.09340995097989E-09"
+        iyz="3.58531096753453E-23"
+        izz="7.65117694614665E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_collar_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_left_collar_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_collar_y"
+    type="revolute">
+    <origin
+      xyz="0.010866 0.01243 0.03"
+      rpy="0 0.14082 0.48018" />
+    <parent
+      link="link_head_z" />
+    <child
+      link="link_left_collar_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_collar_y">
+    <inertial>
+      <origin
+        xyz="2.35228503342455E-15 1.91079790878845E-14 3.33066907387547E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.00204760589692671" />
+      <inertia
+        ixx="7.65117694614675E-08"
+        ixy="1.31521717395931E-22"
+        ixz="-1.65436122510606E-24"
+        iyy="4.09340995097997E-09"
+        iyz="-5.1491993131426E-23"
+        izz="7.65117694614676E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_collar_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/link_right_collar_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_collar_y"
+    type="revolute">
+    <origin
+      xyz="0.010866 -0.01243 0.03"
+      rpy="0 0.14082 -0.48018" />
+    <parent
+      link="link_head_z" />
+    <child
+      link="link_right_collar_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_torso_y_imu">
+    <inertial>
+      <origin
+        xyz="0.0149583803395729 -0.00990766022349893 -0.000196531857172694"
+        rpy="0 0 0" />
+      <mass
+        value="0.00507747803918478" />
+      <inertia
+        ixx="1.18054522064835E-06"
+        ixy="4.586651296406E-08"
+        ixz="5.10269128298852E-09"
+        iyy="5.16405623260908E-07"
+        iyz="-9.22415778970469E-09"
+        izz="1.68948033977049E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_torso_y_imu.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_torso_y_imu.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_y_imu"
+    type="revolute">
+    <origin
+      xyz="-0.059038 -0.038504 0.16924"
+      rpy="1.3265 0 -1.5708" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="sensor_torso_y_imu" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_torso_y_lidar">
+    <inertial>
+      <origin
+        xyz="-0.000194299917764465 1.86207365665547E-07 -0.00449645978854396"
+        rpy="0 0 0" />
+      <mass
+        value="1.26632393732498" />
+      <inertia
+        ixx="0.00061584170067524"
+        ixy="3.58107848255789E-09"
+        ixz="-1.77170427840354E-06"
+        iyy="0.000624707489394618"
+        iyz="-9.79543866275391E-10"
+        izz="0.000712235150230161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_torso_y_lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_torso_y_lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_y_lidar"
+    type="revolute">
+    <origin
+      xyz="0.094 0 0.011"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="sensor_torso_y_lidar" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_torso_y_depth-cam">
+    <inertial>
+      <origin
+        xyz="0.06 -0.00016226 -0.017656"
+        rpy="0 0 0" />
+      <mass
+        value="0.5037" />
+      <inertia
+        ixx="9.8847E-05"
+        ixy="2.2613E-10"
+        ixz="6.9312E-10"
+        iyy="0.0011053"
+        iyz="4.7346E-08"
+        izz="0.0010856" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_torso_y_depth-cam.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_torso_y_depth-cam.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_y_depth-cam"
+    type="revolute">
+    <origin
+      xyz="0.1042 0.06 0.099076"
+      rpy="1.2392 0 -1.5708" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="sensor_torso_y_depth-cam" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_pelvis_depth_cam_front">
+    <inertial>
+      <origin
+        xyz="-0.024989 0.00022882 -0.01672"
+        rpy="0 0 0" />
+      <mass
+        value="0.29095" />
+      <inertia
+        ixx="5.2011E-05"
+        ixy="5.9395E-10"
+        ixz="4.7932E-10"
+        iyy="0.00021372"
+        iyz="2.8473E-07"
+        izz="0.00020498" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_pelvis_depth_cam_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_pelvis_depth_cam_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pelvis_depth_cam_front"
+    type="revolute">
+    <origin
+      xyz="0.071474 -0.024984 0.08589"
+      rpy="0.36373 0 -1.5708" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="sensor_pelvis_depth_cam_front" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_pelvis_depth_cam_back_1">
+    <inertial>
+      <origin
+        xyz="0.024989 -0.00022882 -0.01672"
+        rpy="0 0 0" />
+      <mass
+        value="0.29095" />
+      <inertia
+        ixx="5.2011E-05"
+        ixy="5.6912E-10"
+        ixz="-4.8744E-10"
+        iyy="0.00021372"
+        iyz="-2.8472E-07"
+        izz="0.00020498" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_pelvis_depth_cam_back_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_pelvis_depth_cam_back_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pelvis_depth_cam_back_1"
+    type="revolute">
+    <origin
+      xyz="-0.082978 -0.024984 0.089644"
+      rpy="1.7121 0 1.5708" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="sensor_pelvis_depth_cam_back_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="sensor_pelvis_depth_cam_back_2">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_pelvis_depth_cam_back_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://neura_4ne1_g3/meshes/sensor_pelvis_depth_cam_back_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pelvis_depth_cam_back_2"
+    type="revolute">
+    <origin
+      xyz="-0.093571 -0.025196 0.049475"
+      rpy="0.84735 0 1.5574" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="sensor_pelvis_depth_cam_back_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

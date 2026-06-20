@@ -1,0 +1,1903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="neura_4ne1_g3_V1">
+  <link
+    name="link_pelvis">
+    <inertial>
+      <origin
+        xyz="-0.0051944323826593 3.28898572275822E-06 0.0249240879007661"
+        rpy="0 0 0" />
+      <mass
+        value="10.622" />
+      <inertia
+        ixx="0.0161346572002091"
+        ixy="-5.05512961063951E-06"
+        ixz="0.000209442874924726"
+        iyy="0.0211606775493085"
+        iyz="-4.35030410889035E-08"
+        izz="0.0142611320775227" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_pelvis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_pelvis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_left_hip_y">
+    <inertial>
+      <origin
+        xyz="-0.000855133445265477 0.00680110025841245 -0.00233017094687535"
+        rpy="0 0 0" />
+      <mass
+        value="0.188" />
+      <inertia
+        ixx="0.00366505026506107"
+        ixy="1.51198062884856E-05"
+        ixz="-0.000111922985740422"
+        iyy="0.00648134048751009"
+        iyz="0.000125380721214237"
+        izz="0.00332672119730753" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_hip_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_hip_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_y"
+    type="revolute">
+    <origin
+      xyz="0 0.1035 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="link_left_hip_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.0944"
+      upper="2.0944"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_hip_x">
+    <inertial>
+      <origin
+        xyz="0.00891798268219558 0.00434421012449239 -0.188083693000706"
+        rpy="0 0 0" />
+      <mass
+        value="6.7304" />
+      <inertia
+        ixx="0.0236498622635616"
+        ixy="-3.92189959309972E-05"
+        ixz="-2.49897307708165E-05"
+        iyy="0.0192517313610361"
+        iyz="-0.000628889609084782"
+        izz="0.00876065652660556" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_hip_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_hip_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_y" />
+    <child
+      link="link_left_hip_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.1781"
+      upper="0.2182"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_hip_z">
+    <inertial>
+      <origin
+        xyz="1.81148880564423E-05 -0.018681137397263 -0.38392810910295"
+        rpy="0 0 0" />
+      <mass
+        value="0.47" />
+      <inertia
+        ixx="0.00431013538288031"
+        ixy="-2.7881731537088E-07"
+        ixz="-8.4631062147818E-07"
+        iyy="0.00508154550526373"
+        iyz="-0.000525729195190586"
+        izz="0.00361931673839616" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_hip_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_hip_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_hip_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_x" />
+    <child
+      link="link_left_hip_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shin">
+    <inertial>
+      <origin
+        xyz="-0.0185412217717475 0.0052562458875563 -0.14347436559189"
+        rpy="0 0 0" />
+      <mass
+        value="6.1664" />
+      <inertia
+        ixx="0.0308505374042325"
+        ixy="1.81724222452885E-06"
+        ixz="0.000440721796414112"
+        iyy="0.0319673298198697"
+        iyz="-0.00182330156014126"
+        izz="0.00472313636455633" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_shin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_shin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_knee"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.4275"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_hip_z" />
+    <child
+      link="link_left_shin" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.0944"
+      upper="2.0944"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_ankle_y">
+    <inertial>
+      <origin
+        xyz="4.49573497873779E-09 -1.44790074374512E-09 -3.62852619062437E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.047" />
+      <inertia
+        ixx="5.34622532541518E-06"
+        ixy="-2.8515059194577E-09"
+        ixz="5.03169259923911E-12"
+        iyy="3.64111547849359E-06"
+        iyz="-4.31823256652292E-10"
+        izz="6.15187014540895E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_ankle_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_ankle_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ankle_y"
+    type="revolute">
+    <origin
+      xyz="0 0.00425 -0.43"
+      rpy="0 0.13963 0" />
+    <parent
+      link="link_left_shin" />
+    <child
+      link="link_left_ankle_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.526"
+      upper="1.0472"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_ankle_x">
+    <inertial>
+      <origin
+        xyz="0.00889422251315294 6.14478077404362E-05 -0.0407638954947985"
+        rpy="0 0 0" />
+      <mass
+        value="1.6732" />
+      <inertia
+        ixx="0.00155425108791131"
+        ixy="4.38275542641439E-06"
+        ixz="-0.000504397609707092"
+        iyy="0.0053408085444976"
+        iyz="3.50048875798967E-06"
+        izz="0.00631865834604929" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_ankle_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_ankle_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_ankle_x"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_ankle_y" />
+    <child
+      link="link_left_ankle_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.2618"
+      upper="0.2618"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_y">
+    <inertial>
+      <origin
+        xyz="-0.000855129902885065 -0.0068010985043281 -0.00232735157795438"
+        rpy="0 0 0" />
+      <mass
+        value="0.188" />
+      <inertia
+        ixx="0.00366504648299085"
+        ixy="-1.51142023957985E-05"
+        ixz="-0.000111849864107182"
+        iyy="0.00648133497617918"
+        iyz="-0.000125362535446343"
+        izz="0.00332672041611428" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_hip_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_hip_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.1035 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="link_right_hip_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.0944"
+      upper="2.0944"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_x">
+    <inertial>
+      <origin
+        xyz="0.00891016446522679 -0.00430904943941225 -0.188072612008305"
+        rpy="0 0 0" />
+      <mass
+        value="6.7304" />
+      <inertia
+        ixx="0.0236506072203773"
+        ixy="3.78342184724541E-05"
+        ixz="-2.39327423146903E-05"
+        iyy="0.0192529951600107"
+        iyz="0.000626754922002228"
+        izz="0.00876097841600518" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_hip_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_hip_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_y" />
+    <child
+      link="link_right_hip_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.2182"
+      upper="1.1781"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_hip_z">
+    <inertial>
+      <origin
+        xyz="2.89090610678782E-05 0.0186801959000585 -0.383922574629849"
+        rpy="0 0 0" />
+      <mass
+        value="0.47" />
+      <inertia
+        ixx="0.00431010504336062"
+        ixy="3.34904077807437E-07"
+        ixz="-8.44628923248588E-07"
+        iyy="0.00508153627181179"
+        iyz="0.00052568093365789"
+        izz="0.00361927503222782" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_hip_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_hip_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_hip_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_x" />
+    <child
+      link="link_right_hip_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shin">
+    <inertial>
+      <origin
+        xyz="-0.0185173258183082 -0.00537278459850497 -0.143475496810468"
+        rpy="0 0 0" />
+      <mass
+        value="6.1664" />
+      <inertia
+        ixx="0.0308519539635926"
+        ixy="-8.56915945022004E-08"
+        ixz="0.000439591177557534"
+        iyy="0.0319687109419513"
+        iyz="0.00181682007552279"
+        izz="0.00472332038294669" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_shin.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_shin.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_knee"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.4275"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_hip_z" />
+    <child
+      link="link_right_shin" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.0944"
+      upper="2.0944"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_ankle_y">
+    <inertial>
+      <origin
+        xyz="7.12194841712144E-08 -1.4479006604784E-09 5.75250636680735E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.047" />
+      <inertia
+        ixx="5.34622329434344E-06"
+        ixy="2.76530499835293E-09"
+        ixz="-3.34144987269417E-12"
+        iyy="3.64111547849359E-06"
+        iyz="-3.38051883078298E-10"
+        izz="6.15187217648063E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_ankle_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_ankle_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ankle_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.00425 -0.43"
+      rpy="0 0.13963 0" />
+    <parent
+      link="link_right_shin" />
+    <child
+      link="link_right_ankle_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.526"
+      upper="1.0472"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_ankle_x">
+    <inertial>
+      <origin
+        xyz="0.00891768182276043 -0.000421978424063038 -0.0407584471375543"
+        rpy="0 0 0" />
+      <mass
+        value="1.6732" />
+      <inertia
+        ixx="0.00155433542508926"
+        ixy="-2.71527087266681E-05"
+        ixz="-0.000504502789439854"
+        iyy="0.00534029841436539"
+        iyz="7.23148311739191E-07"
+        izz="0.00631812146648298" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_ankle_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_ankle_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ankle_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_ankle_y" />
+    <child
+      link="link_right_ankle_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.2618"
+      upper="0.2618"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_torso_z">
+    <inertial>
+      <origin
+        xyz="0.0160563183653513 -3.86679957346723E-05 -0.0506908665923584"
+        rpy="0 0 0" />
+      <mass
+        value="0.329" />
+      <inertia
+        ixx="0.00263924540378316"
+        ixy="-5.48144524693759E-10"
+        ixz="-0.00014595103199152"
+        iyy="0.00208764642296456"
+        iyz="1.37362077775871E-09"
+        izz="0.00228250953243651" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_torso_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_torso_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0.25"
+      rpy="0 0 0" />
+    <parent
+      link="link_pelvis" />
+    <child
+      link="link_torso_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_torso_x">
+    <inertial>
+      <origin
+        xyz="-0.00232675468755305 -0.0141485878461482 0.0505903110018673"
+        rpy="0 0 0" />
+      <mass
+        value="2.1432" />
+      <inertia
+        ixx="0.00267118211009183"
+        ixy="2.96741673421364E-05"
+        ixz="-0.000139211248504268"
+        iyy="0.00271417953683687"
+        iyz="0.000148811660528112"
+        izz="0.00165059403057494" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_torso_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_torso_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_torso_z" />
+    <child
+      link="link_torso_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.526"
+      upper="0.526"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_torso_y">
+    <inertial>
+      <origin
+        xyz="-0.0532937073915567 0.00172077827648322 0.0743360259093524"
+        rpy="0 0 0" />
+      <mass
+        value="14.8332" />
+      <inertia
+        ixx="0.0991302388410973"
+        ixy="-0.000110244687891792"
+        ixz="-0.000588064487203325"
+        iyy="0.0767471198754082"
+        iyz="0.000216597043550479"
+        izz="0.0369521482928267" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_torso_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_torso_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="torso_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0.114"
+      rpy="0 0 0" />
+    <parent
+      link="link_torso_x" />
+    <child
+      link="link_torso_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.5812"
+      upper="0.5812"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shoulder_y">
+    <inertial>
+      <origin
+        xyz="0.01562061713514 -0.0504572482966091 0.000689689160942308"
+        rpy="0 0 0" />
+      <mass
+        value="0.329" />
+      <inertia
+        ixx="0.00329857226203691"
+        ixy="-0.000322288795844653"
+        ixz="1.55918302351957E-05"
+        iyy="0.00296580701114752"
+        iyz="-1.03661729454304E-05"
+        izz="0.00312663964842355" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_shoulder_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_shoulder_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_y"
+    type="revolute">
+    <origin
+      xyz="0 0.20737 0.14908"
+      rpy="0.20944 0 0" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="link_left_shoulder_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shoulder_x">
+    <inertial>
+      <origin
+        xyz="-0.00426541831420014 -0.000236122192986798 -0.0621733739398518"
+        rpy="0 0 0" />
+      <mass
+        value="3.196" />
+      <inertia
+        ixx="0.00361712218363874"
+        ixy="-1.25425848442599E-06"
+        ixz="0.000399769412888555"
+        iyy="0.00332216176661887"
+        iyz="3.55220958583383E-06"
+        izz="0.00178404542258427" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_shoulder_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_shoulder_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_shoulder_y" />
+    <child
+      link="link_left_shoulder_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.526"
+      upper="3.6652"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_shoulder_z">
+    <inertial>
+      <origin
+        xyz="-9.61650615265572E-05 0.00456455735340455 -0.249557878294186"
+        rpy="0 0 0" />
+      <mass
+        value="2.115" />
+      <inertia
+        ixx="0.00142834376421349"
+        ixy="-1.3472558253452E-06"
+        ixz="2.3621207829288E-06"
+        iyy="0.00143620984618223"
+        iyz="0.00021105124608023"
+        izz="0.00108848754115105" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_shoulder_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_shoulder_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_shoulder_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_shoulder_x" />
+    <child
+      link="link_left_shoulder_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_lower_arm">
+    <inertial>
+      <origin
+        xyz="8.88274736576296E-05 -0.0165689167877218 -0.0345090741067622"
+        rpy="0 0 0" />
+      <mass
+        value="0.564" />
+      <inertia
+        ixx="0.000969559497488879"
+        ixy="2.82399527133909E-07"
+        ixz="-3.77971543971373E-07"
+        iyy="0.00108321032849777"
+        iyz="0.000152735202222743"
+        izz="0.000644401708286606" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_lower_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_lower_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_elbow"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.2915"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_shoulder_z" />
+    <child
+      link="link_left_lower_arm" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.7453"
+      upper="1.7453"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_wrist_z">
+    <inertial>
+      <origin
+        xyz="-0.00533713501222397 5.24550086827835E-06 -0.167399108740743"
+        rpy="0 0 0" />
+      <mass
+        value="0.7708" />
+      <inertia
+        ixx="0.000788130572044346"
+        ixy="6.09219181948994E-07"
+        ixz="6.78956890272885E-05"
+        iyy="0.000831688200727517"
+        iyz="2.01238273885228E-07"
+        izz="0.000355038984180845" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_wrist_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_wrist_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wrist_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_lower_arm" />
+    <child
+      link="link_left_wrist_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_wrist_y">
+    <inertial>
+      <origin
+        xyz="0.000126746060345413 -3.04495708726704E-05 -0.00145364718660687"
+        rpy="0 0 0" />
+      <mass
+        value="0.0047" />
+      <inertia
+        ixx="2.91837043993428E-07"
+        ixy="-3.56673637007024E-14"
+        ixz="6.82596320204445E-09"
+        iyy="2.13449085760094E-07"
+        iyz="8.80416774868125E-15"
+        izz="2.14944747122879E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_wrist_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_wrist_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wrist_y"
+    type="revolute">
+    <origin
+      xyz="0.019 0 -0.2669"
+      rpy="0 0 0" />
+    <parent
+      link="link_left_wrist_z" />
+    <child
+      link="link_left_wrist_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.0472"
+      upper="0.7854"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_left_wrist_x">
+    <inertial>
+      <origin
+        xyz="-0.0185478541655334 -0.00251466389049448 -0.0760676164512458"
+        rpy="0 0 0" />
+      <mass
+        value="0.846" />
+      <inertia
+        ixx="0.000228125085238374"
+        ixy="1.30179928556456E-06"
+        ixz="1.59758120992844E-05"
+        iyy="0.000196938225126928"
+        iyz="-5.87443823469124E-07"
+        izz="0.000131183066673565" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_wrist_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_left_wrist_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wrist_x"
+    type="revolute">
+    <origin
+      xyz="0.00096099 0 -0.010958"
+      rpy="0 -0.087474 0" />
+    <parent
+      link="link_left_wrist_y" />
+    <child
+      link="link_left_wrist_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.9582"
+      upper="0.9582"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shoulder_y">
+    <inertial>
+      <origin
+        xyz="0.0156194286678186 0.0504578758098132 0.000689602821834723"
+        rpy="0 0 0" />
+      <mass
+        value="0.329" />
+      <inertia
+        ixx="0.00329858168407016"
+        ixy="0.000322307973881156"
+        ixz="1.5578686381463E-05"
+        iyy="0.00296574533859684"
+        iyz="1.02891037733229E-05"
+        izz="0.00312651105024407" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_shoulder_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_shoulder_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_y"
+    type="revolute">
+    <origin
+      xyz="0 -0.20737 0.14908"
+      rpy="-0.20944 0 0" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="link_right_shoulder_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shoulder_x">
+    <inertial>
+      <origin
+        xyz="-0.0042642376268817 0.000262139358217062 -0.0621737836742687"
+        rpy="0 0 0" />
+      <mass
+        value="3.196" />
+      <inertia
+        ixx="0.00361713980877827"
+        ixy="1.62122404442254E-06"
+        ixz="0.000399951558357213"
+        iyy="0.00332227154837173"
+        iyz="-2.78420035418168E-06"
+        izz="0.00178414214952635" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_shoulder_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_shoulder_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_x"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_shoulder_y" />
+    <child
+      link="link_right_shoulder_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.6652"
+      upper="0.526"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_shoulder_z">
+    <inertial>
+      <origin
+        xyz="-0.000105425416747545 -0.00456410940670499 -0.249556828116557"
+        rpy="0 0 0" />
+      <mass
+        value="2.115" />
+      <inertia
+        ixx="0.00142819759010123"
+        ixy="1.42311950044652E-06"
+        ixz="2.34806204953223E-06"
+        iyy="0.00143610392454071"
+        iyz="-0.000211054400217775"
+        izz="0.00108837311741382" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_shoulder_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_shoulder_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_shoulder_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_shoulder_x" />
+    <child
+      link="link_right_shoulder_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_lower_arm">
+    <inertial>
+      <origin
+        xyz="-0.000153525039887196 0.0165677816622378 -0.0345059704735965"
+        rpy="0 0 0" />
+      <mass
+        value="0.564" />
+      <inertia
+        ixx="0.000969479820287546"
+        ixy="-6.84051087671075E-07"
+        ixz="-1.19711810173986E-06"
+        iyy="0.00108314143245308"
+        iyz="-0.000152743370332444"
+        izz="0.000644371753013022" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_lower_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_lower_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_elbow"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.2915"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_shoulder_z" />
+    <child
+      link="link_right_lower_arm" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.7453"
+      upper="1.7453"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_wrist_z">
+    <inertial>
+      <origin
+        xyz="-0.00542576738633033 -2.92322124978428E-06 -0.168196768107938"
+        rpy="0 0 0" />
+      <mass
+        value="0.7708" />
+      <inertia
+        ixx="0.000783437380191759"
+        ixy="1.17054824188765E-07"
+        ixz="6.77781450349951E-05"
+        iyy="0.000828266614553805"
+        iyz="-6.08056371190893E-08"
+        izz="0.000354400312414596" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_wrist_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_wrist_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wrist_z"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_lower_arm" />
+    <child
+      link="link_right_wrist_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_wrist_y">
+    <inertial>
+      <origin
+        xyz="0.000126746388063339 -3.04489850738165E-05 -0.00145364761138339"
+        rpy="0 0 0" />
+      <mass
+        value="0.0047" />
+      <inertia
+        ixx="2.91837059059916E-07"
+        ixy="-5.0524460297093E-14"
+        ixz="6.8259628982577E-09"
+        iyy="2.13449105286169E-07"
+        iyz="2.69754796554809E-14"
+        izz="2.14944777951786E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_wrist_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_wrist_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wrist_y"
+    type="revolute">
+    <origin
+      xyz="0.019 0 -0.2669"
+      rpy="0 0 0" />
+    <parent
+      link="link_right_wrist_z" />
+    <child
+      link="link_right_wrist_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.0472"
+      upper="0.7854"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_right_wrist_x">
+    <inertial>
+      <origin
+        xyz="-0.0226096513045262 0.00412631697797988 -0.0792998296334673"
+        rpy="0 0 0" />
+      <mass
+        value="0.846" />
+      <inertia
+        ixx="4.74452734359776E-05"
+        ixy="3.42240913910444E-07"
+        ixz="-3.73117539388162E-06"
+        iyy="4.81406816690851E-05"
+        iyz="5.85824379260834E-08"
+        izz="2.86620516423618E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_wrist_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_right_wrist_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wrist_x"
+    type="revolute">
+    <origin
+      xyz="0.00096099 0 -0.010958"
+      rpy="0 -0.087474 0" />
+    <parent
+      link="link_right_wrist_y" />
+    <child
+      link="link_right_wrist_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.9582"
+      upper="0.9582"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_head_z">
+    <inertial>
+      <origin
+        xyz="0.0010553429731073 2.48310429049494E-07 0.0105927451418644"
+        rpy="0 0 0" />
+      <mass
+        value="0.0047" />
+      <inertia
+        ixx="0.000164363815486506"
+        ixy="2.8753897628571E-10"
+        ixz="1.52280997854998E-07"
+        iyy="0.000164430588037944"
+        iyz="-9.31607318406835E-10"
+        izz="0.000295552846418277" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_head_z.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_head_z.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_z"
+    type="continuous">
+    <origin
+      xyz="0 0 0.2535"
+      rpy="0 0 0" />
+    <parent
+      link="link_torso_y" />
+    <child
+      link="link_head_z" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_head_x">
+    <inertial>
+      <origin
+        xyz="7.33430401949481E-07 3.04493490103529E-05 0.00954083761738367"
+        rpy="0 0 0" />
+      <mass
+        value="0.0188" />
+      <inertia
+        ixx="2.92438302275675E-07"
+        ixy="-3.87640497820634E-14"
+        ixz="-2.99270106639532E-11"
+        iyy="2.13449092601192E-07"
+        iyz="-2.66585034573196E-14"
+        izz="2.14343509770296E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_head_x.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_head_x.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_x"
+    type="revolute">
+    <origin
+      xyz="-0.013 0 0.03"
+      rpy="0 0 0" />
+    <parent
+      link="link_head_z" />
+    <child
+      link="link_head_x" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.9582"
+      upper="0.9582"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_head_y">
+    <inertial>
+      <origin
+        xyz="0.0446064665595648 -6.08326321681898E-05 0.117913553719921"
+        rpy="0 0 0" />
+      <mass
+        value="1.8518" />
+      <inertia
+        ixx="0.00281172509187202"
+        ixy="2.12103874935613E-06"
+        ixz="0.000305912863306255"
+        iyy="0.00259739600748993"
+        iyz="-5.37731462234998E-06"
+        izz="0.00219786150477089" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_head_y.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rviz_4ne1/meshes/stl/link_head_y.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_y"
+    type="revolute">
+    <origin
+      xyz="0 0 0.011"
+      rpy="0 0 0" />
+    <parent
+      link="link_head_x" />
+    <child
+      link="link_head_y" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-0.7854"
+      upper="1.0472"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
